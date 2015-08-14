@@ -1,0 +1,239 @@
+@dot-bg: #F50000;
+@dot-bd: #F50000;
+@label-bg: rgba(0,0,0,.3);
+@label-c: #FFF;
+
+/* No Touch devices */
+.cd-nav-trigger {
+    display: none;
+}
+
+.no-touch {
+
+    .cd-vnav {
+        display: none;
+        position: fixed;
+        right: 0px;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+        z-index: 1;
+
+        @media @md {
+            display: block;
+        }
+
+        li {
+            text-align: right;
+        }
+
+        a {
+            display: inline-block;
+            padding-right: 40px;
+            line-height: 1.4;
+            /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+            -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            span {
+                float: right;
+                display: inline-block;
+                transform: scale(0.5);
+            }
+
+            &:hover {
+                span {
+                    transform: scale(1);
+                }
+
+                .cd-label {
+                    opacity: 1;
+                }
+            }
+
+            &.is-selected .cd-dot {
+                background-color: white;
+            }
+        }
+
+        /* 1 — we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+        .cd-dot {
+            position: relative;
+            top: 8px; /* 1 */
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            background-color: @dot-bg;
+            border: 2px solid @dot-bd;
+            transition: transform 0.2s, background-color 0.5s;
+            transform-origin: 50% 50%;
+        }
+
+        .cd-label {
+            position: relative;
+            margin-right: 10px;
+            padding: .4em .8em;
+            color: @label-c;
+            font-size: 14px;
+            background: @label-bg;
+            border-radius: 3px;
+            transition: transform 0.2s, opacity 0.2s;
+            opacity: 0;
+            transform-origin: 100% 50%;
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 100%;
+                top: calc(50% - 6px);
+                border: 6px solid transparent;
+                border-width: 6px 0 6px 6px;
+                border-left-color: @label-bg;
+            }
+        }
+    }
+}
+
+
+/* Touch devices */
+.touch {
+
+    .cd-nav-trigger {
+        display: block;
+        z-index: 2;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        height: 44px;
+        width: 44px;
+        border-radius: 0.25em;
+        background: rgba(255, 255, 255, 0.3);
+
+        span {
+            position: absolute;
+            height: 4px;
+            width: 4px;
+            background-color: #3e3947;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            bottom: auto;
+            right: auto;
+            transform: translateX(-50%) translateY(-50%);
+
+            &::before,
+            &::after {
+                content: '';
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                background-color: inherit;
+                border-radius: inherit;
+            }
+
+            &::before {
+                top: -9px;
+            }
+
+            &::after {
+                bottom: -9px;
+            }
+        }
+    }
+
+    .cd-vnav {
+        position: fixed;
+        z-index: 1;
+        right: 15px;
+        bottom: 15px;
+        width: 90vw;
+        max-width: 200px;
+        max-height: 90vh;
+        overflow-y: scroll;
+        transform-origin: right bottom;
+        transform: scale(0);
+        transition-property: transform;
+        transition-duration: 0.2s;
+        border-radius: 0.25em;
+        background-color: rgba(255, 255, 255, 0.9);
+
+        a {
+            display: block;
+            padding: .5em 1em;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(62, 57, 71, 0.1);
+
+            span:first-child {
+                display: none;
+            }
+
+            &.is-selected span:last-child {
+                color: #810500;
+                font-weight: bold;
+            }
+        }
+
+        &.open {
+            transform: scale(1);
+
+            & + .cd-nav-trigger {
+                background-color: transparent;
+
+                span {
+                    background-color: rgba(62, 57, 71, 0);
+
+                    &::before,
+                    &::after {
+                        background-color: #3e3947;
+                        height: 3px;
+                        width: 20px;
+                        border-radius: 0;
+                        left: -8px;
+                    }
+
+                    &::before {
+                        transform: rotate(45deg);
+                        top: 1px;
+                    }
+
+                    &::after {
+                        transform: rotate(135deg);
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+
+        li:last-child a {
+            border-bottom: none;
+        }
+    }
+
+    .cd-vnav--list {
+        margin: 0;
+    }
+}
+
+@media only screen and @sm {
+
+    .touch .cd-nav-trigger,
+    .touch .cd-vnav {
+        bottom: 15px;
+    }
+}
+
+.cd-img-replace {
+    /* replace text with a background-image */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+

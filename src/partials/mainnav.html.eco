@@ -1,0 +1,67 @@
+<ul class="menu">
+    <li class="menu--item <%- @isActive('/choose-your-card/') %>">
+        <a href="<%= @getUrl('/choose-your-card/') %>" class="menu--link"><span class="menu--text">Choose Your Card</span></a>
+        <ul class="submenu">
+            <li class="menu--item">
+                <a href="<%= @getUrl('/choose-your-card/#express-card') %>" class="menu--link">
+                    <svg class="i i--express"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--express"></use></svg>
+                    <span class="menu--text">Express Card</span>
+                </a>
+            </li>
+            <li class="menu--item">
+                <a href="<%= @getUrl('/choose-your-card/#personal-plus') %>" class="menu--link">
+                    <svg class="i i--persplus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persplus"></use></svg>
+                    <span class="menu--text">Personal Plus</span>
+                </a>
+            </li>
+            <li class="menu--item">
+                <a href="<%= @getUrl('/choose-your-card/#personal-max') %>" class="menu--link">
+                    <svg class="i i--persmax"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persmax"></use></svg>
+                    <span class="menu--text">Personal Max</span>
+                </a>
+            </li>
+            <li class="menu--item">
+                <a href="<%= @getUrl('/choose-your-card/#family-card') %>" class="menu--link">
+                    <svg class="i i--family"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--family"></use></svg>
+                    <span class="menu--text">Family Card</span>
+                </a>
+            </li>
+            <li class="menu--separator"></li>
+            <li class="menu--item">
+                <a href="<%= @getUrl('/choose-your-card/#gift-card') %>" class="menu--link">
+                    <span class="menu--text">Gift Card</span>
+                </a>
+            </li>
+            <li class="menu--item">
+                <a href="<%= @getUrl('/choose-your-card/#compare-cards') %>" class="menu--link">
+                    <span class="menu--text">Compare Cards</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="menu--item <%- @isActive('/get-started/') %>">
+        <a href="<%= @getUrl('/get-started/') %>" class="menu--link"><span class="menu--text">Get Started</span></a>
+        <ul class="submenu">
+            <li class="menu--item"><a href="<%= @getUrl('/get-started/#buy-now') %>" class="menu--link"><span class="menu--text">Buy Now</span></a></li>
+            <li class="menu--item"><a href="<%= @getUrl('/get-started/#store-locator') %>" class="menu--link"><span class="menu--text">Store Locator</span></a></li>
+            <li class="menu--item"><a href="<%= @getUrl('/get-started/#register-my-card') %>" class="menu--link"><span class="menu--text">Register My Card</span></a></li>
+            <li class="menu--item"><a href="<%= @getUrl('/get-started/#upgrade-my-card') %>" class="menu--link"><span class="menu--text">Upgrade My Card</span></a></li>
+            <li class="menu--item"><a href="<%= @getUrl('/get-started/#quick-start-guide') %>" class="menu--link"><span class="menu--text">Quick Start Guide</span></a></li>
+        </ul>
+    </li>
+    <li class="menu--item <%- @isActive('/questions/') %>">
+        <a href="<%= @getUrl('/questions/') %>" class="menu--link"><span class="menu--text">Questions</span></a>
+        <ul class="submenu">
+            <li class="menu--item"><a href="<%= @getUrl('/questions/#FAQs') %>" class="menu--link"><span class="menu--text">FAQ's</span></a></li>
+            <li class="menu--item"><a href="<%= @getUrl('/questions/#FEEs') %>" class="menu--link"><span class="menu--text">FEE's</span></a></li>
+            <li class="menu--item"><a href="<%= @getUrl('/questions/#TnCs') %>" class="menu--link"><span class="menu--text">T&amp;C's</span></a></li>
+        </ul>
+    </li>
+    <li class="menu--item <%- @isActive('/my-card/') %>">
+        <a href="<%= @getUrl('/my-card/') %>" class="menu--link"><span class="menu--text">My Card</span></a>
+        <ul class="submenu">
+            <li class="menu--item <%- @isActive('/my-card/login/') %>"><a href="<%= @getUrl('/my-card/login/') %>" class="menu--link"><span class="menu--text">Log In</span></a></li>
+            <li class="menu--item <%- @isActive('/my-card/register/') %>"><a href="<%= @getUrl('/my-card/register/') %>" class="menu--link"><span class="menu--text">Register</span></a></li>
+        </ul>
+    </li>
+</ul>

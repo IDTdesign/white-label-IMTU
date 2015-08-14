@@ -1,0 +1,287 @@
+// temporary
+.txt_1_h1 {
+    display: none;
+}
+
+
+//steps-pane
+.steps-pane {
+    padding: 0 0 30px;
+    font-size: 20px;
+
+    .steps_h2 {
+        display: inline-block;
+
+        &.current {
+            color: @red1;
+        }
+
+        &.unavailable {
+            color: #999;
+        }
+    }
+
+    .separator {
+        display: inline-block;
+        padding: 0 15px;
+
+        &:last-child {
+            display: none;
+        }
+    }
+}
+
+.form-row,
+.form_row {
+    margin-bottom: 20px;
+}
+
+.form-actions {
+    a,
+    [type="submit"] {
+        margin-bottom: .3em;
+    }
+
+    .wrapper-back {
+        display: inline-block;
+
+        a {
+            .button;
+            display: inline-block;
+            text-decoration: none;
+            background: @paper;
+            color: #0076ff;
+            border-color: #0076ff;
+
+            &:hover,
+            &:focus {
+                background-color: @paper;
+                box-shadow: 0 0 0 3px fade(#0076ff, 20%);
+            }
+        }
+    }
+
+    .wrapper-forward {
+        display: inline-block;
+    }
+}
+
+@media @sm {
+
+    .form-row {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+
+        .lbl {
+            display: table-cell;
+            width: 30%;
+            padding-right: 1em;
+        }
+
+        .field {
+            display: table-cell;
+            width: 70%;
+
+            &:only-child {
+                padding-left: 30%;
+            }
+        }
+    }
+
+    .form-row.form-actions {
+        position: relative;
+        display: block;
+        width: auto;
+        padding-left: 30%;
+
+        .wrapper-back {
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+
+
+
+.text-box {
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.validation-summary-errors {
+    color: @error;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.1;
+
+    & > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        & > li {
+            padding: 8px 15px;
+            margin-left: 40px;
+            background-color: lighten(@error, 50%);
+            color: @error;
+
+            &:before {
+                content: '';
+            }
+        }
+
+        &:before {
+            content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfAQMAAAAlYIR6AAAAA3NCSVQICAjb4U/gAAAABlBMVEX/AAD///9BHTQRAAAACXBIWXMAAAsSAAALEgHS3X78AAAAFnRFWHRDcmVhdGlvbiBUaW1lADAxLzE0LzE0FN6nawAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUSURBVAiZY2AgCTA3kEDg1EYcAADZogYlsCdTbQAAAABJRU5ErkJggg==);
+            display: block;
+            float: left;
+            margin-right: 5px;
+        }
+    }
+
+}
+
+.input-validation-error {
+    border-color: @error;
+
+    &:focus {
+        border-color: @error;
+        box-shadow: 0 0 0 3px fade(@error, 20%);
+    }
+}
+
+.field-validation-error {
+    display: block;
+    color: @error;
+    font-size: 14px;
+
+    @media (min-width: 1140px) {
+        display: inline-block;
+        width: 260px;
+        padding-left: 1em;
+        vertical-align: middle;
+    }
+}
+
+#postcode_result_display {
+    color: @error;
+    font-size: 14px;
+}
+
+.lbl-hint {
+    display: block;
+    color: #999;
+    font-size: 14px;
+
+}
+
+@media (min-width: 1140px) {
+
+    .field .lbl-hint {
+        display: inline-block;
+        width: 260px;
+        padding-left: 1em;
+        vertical-align: middle;
+    }
+}
+
+.postcode {
+
+    .text-box {
+        width: calc(100% - 8.4em);
+        max-width: 265px;
+
+        @media @sm {
+            width: calc(100% - 9.2em);
+            max-width: 233px;
+        }
+    }
+
+    .field-validation-error,
+    .field-validation-valid {
+        display: none;
+    }
+}
+
+.content-block {
+
+    h2 {
+        border-bottom: 1px solid @red1;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.form-styled {
+    margin-bottom: 5em;
+
+}
+
+.form-row {
+    .cbox {
+        display: table-cell;
+        vertical-align: top;
+        width: 32px;
+
+        & + .lbl-checkbox {
+            display: table-cell;
+            vertical-align: top;
+        }
+    }
+}
+
+.form_row {
+    & > label {
+        display: block;
+    }
+
+    & > .field-validation-valid,
+    & > .field-validation-error {
+        display: block;
+    }
+}
+
+@media @sm {
+    .form_row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & > label {
+            width: 30%;
+            padding-right: 1em;
+        }
+
+        & > .field-validation-valid,
+        & > .field-validation-error {
+            display: block;
+            width: 100%;
+            padding-left: 30%;
+        }
+
+        [type="checkbox"] {
+            order: 1;
+        }
+    }
+}
+
+// override inline styles
+.jq-dte-day,
+.jq-dte-month {
+    width: 2.4em !important;
+}
+.jq-dte-year {
+    width: 3.5em !important;
+}
+.jq-dte-inner {
+    .separator {
+        margin: 0 .3em;
+    }
+}
+
+#SecurityDigits {
+    width: 3em;
+}

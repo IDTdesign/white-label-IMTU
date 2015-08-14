@@ -1,0 +1,50 @@
+<nav id="cd-vertical-nav" class="cd-vnav">
+    <ul class="cd-vnav--list">
+        <li>
+            <a href="#b1" data-number="1">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Intro</span>
+            </a>
+        </li>
+        <li>
+            <a href="#express-card" data-number="2">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Express card</span>
+            </a>
+        </li>
+        <li>
+            <a href="#personal-plus" data-number="3">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Personal Plus</span>
+            </a>
+        </li>
+        <li>
+            <a href="#personal-max" data-number="4">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Personal Max</span>
+            </a>
+        </li>
+        <li>
+            <a href="#family-card" data-number="5">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Family card</span>
+            </a>
+        </li>
+        <li>
+            <a href="#gift-card" data-number="6">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Gift card</span>
+            </a>
+        </li>
+        <li>
+            <a href="#compare-cards" data-number="7">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Compare cards</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+
+
+<%- # %>

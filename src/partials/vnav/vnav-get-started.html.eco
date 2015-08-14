@@ -1,0 +1,37 @@
+<nav id="cd-vertical-nav" class="cd-vnav">
+    <ul class="cd-vnav--list">
+        <li>
+            <a href="#buy-now" data-number="1">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Buy Now</span>
+            </a>
+        </li>
+        <li>
+            <a href="#store-locator" data-number="2">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Store locator</span>
+            </a>
+        </li>
+        <li>
+            <a href="#register-my-card" data-number="3">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Register</span>
+            </a>
+        </li>
+        <li>
+            <a href="#upgrade-my-card" data-number="4">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Upgrade</span>
+            </a>
+        </li>
+        <li>
+            <a href="#quick-start-guide" data-number="5">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Guides</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+
+<%- # %>

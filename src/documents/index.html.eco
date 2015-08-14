@@ -1,0 +1,8 @@
+---
+layout: 'default'
+title: ''
+---
+
+<img src="<%- @getUrl('/img/logo.svg')%>" width="100" alt="logo">
+
+<%- @partial('vnav/vnav-index') %>

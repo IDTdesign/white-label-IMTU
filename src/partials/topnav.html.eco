@@ -1,0 +1,4 @@
+<ul class="topmenu">
+    <li class="menu--item <%- @isActive('/my-card/login/') %>"><a href="<%= @getUrl('/my-card/login/') %>" class="menu--link"><span class="menu--text">Log In</span></a></li>
+    <li class="menu--item <%- @isActive('/my-card/register/') %>"><a href="<%= @getUrl('/my-card/register/') %>" class="menu--link"><span class="menu--text">Register</span></a></li>
+</ul>

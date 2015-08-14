@@ -1,0 +1,24 @@
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# node-waf configuration
+.lock-wscript
+
+# Temp Files
+**/*.log
+**/.docpad.db
+
+# Build Files
+build/
+components/
+bower_components/
+node_modules/
+out/
+.docpad.db
+
+# IDE files
+.idea/
+
+# Custom
+
+src/files/vendor

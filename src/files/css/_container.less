@@ -1,0 +1,36 @@
+// @pad_hor: 20px;
+// @pad_hor_big: 40px;
+
+.container {
+    background-size: cover;
+    background-position: 50% 50%;
+    color: #FFF;
+    background-color: #863236;
+    background-image: url(../img/blurbg.jpg);
+}
+
+.container--content {
+    margin: auto;
+    padding: 80px @pad_hor;
+
+}
+
+.container:nth-child(1) .container--content {
+    padding-top: 206px;
+
+    @media (min-width: 500px) {
+        padding-top: 160px;
+    }
+
+}
+
+@media @xsm {
+    .container--content {
+        padding-left: @pad_hor_big;
+        padding-right: @pad_hor_big;
+    }
+}
+
+.allpage--body .container:only-child {
+    flex-grow: 1;
+}
