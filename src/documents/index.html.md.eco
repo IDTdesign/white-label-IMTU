@@ -1,0 +1,12 @@
+---
+layout: 'docs'
+title: ''
+---
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ab, est autem qui doloremque, eum aperiam veniam voluptatibus ea! Sint at veniam fugiat nam earum alias saepe dolor culpa ratione!
+
+## Documetnation
+
+## Templates
+
+* [Homepage](<%- @getUrl('/templates/') %>)

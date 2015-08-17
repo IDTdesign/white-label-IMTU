@@ -1,0 +1,39 @@
+---
+layout: 'default'
+title: 'Homepage'
+---
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>International Mobile Top Up</h1>
+        <p>Add funds to prepaid phones of friends and family around the world. It's simple, safe and instant.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Start</a></p>
+    </div>
+</div>
+
+<div class="container">
+
+    <section id="recieverAnchor">
+        <article id="rcAnchor">
+            <h3>To Get Started, Enter an International Mobile Phone Number, Beginning with Country Code</h3>
+            <form action="/services/international-mobile-topup" autocomplete="off" id="_receiverForm" method="post" novalidate="novalidate">
+               <input name="__RequestVerificationToken" type="hidden" value="o1K1xhStBMKhry_IjVeYZxZWEMIuDmGEkChz_Kzy7GKxtL2F-FSQEA6gOBjWDm7o3OciCbp3xpd-JszXBlNtG_telvGEv3fwuxOENFRZ54w1">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-8 form-group">
+                        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                        <input class="form-control form-control-default numericOnly ui-autocomplete-input" data-val="true" data-val-regex="Invalid Phone" data-val-regex-pattern="^[0-9]+$" data-val-required="Recipient's Mobile Number is required." data-val-validatephonelengthif="Invalid Phone" data-val-validatephonelengthif-propertyname="ProductType" id="ReceiverNumber" name="ReceiverNumber" placeholder="Phone Number" producttype="I" type="text" value="" autocomplete="off">
+                        <input id="Country" name="Country" type="hidden" value="">
+                        <input id="ProductType" name="ProductType" type="hidden" value="I">
+                        <span class="field-validation-valid" data-valmsg-for="ReceiverNumber" data-valmsg-replace="true"></span>
+                        <em id="country_flag"></em>
+                        <em id="country_desc"></em>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 form-group pull-right">
+                        <input class="btn btn-primary btn-block-xs" type="submit" value="Continue" disabled="disabled">
+                    </div>
+                </div>
+            </form>
+        </article>
+    </section>
+
+</div>

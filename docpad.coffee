@@ -29,7 +29,7 @@ docpadConfig = {
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				boss, revolution, prepaid, mastercard, credit, cards, gift, card
+				internations, mobile, top, up, service
 				"""
 
 			email: ""
@@ -116,6 +116,9 @@ docpadConfig = {
 
 	# Plugins configurations
 	plugins:
+		copy:
+			files:
+				src: 'files'
 		sitemap:
 			cachetime: 600000
 			changefreq: 'weekly'
@@ -180,7 +183,6 @@ docpadConfig = {
 
 					# Development styles
 					styles: [
-						'/vendor/normalize.css'
 						'/css/template.css'
 					]
 
@@ -188,6 +190,38 @@ docpadConfig = {
 					scripts: [
 						'/vendor/modernizr.js'
 						'/vendor/jquery.min.js'
+						'/vendor/bootstrap/js/bootstrap.js'
+						#'/vendor/jquery.sticky.js'
+						'/vendor/fastclick.js'
+						'/js/init.js'
+						#'/vendor/60fps-scroll.js'
+					]
+
+			plugins:
+				grunt:
+					writeAfter: false
+					writeBefore: false
+					renderBefore: false
+					renderAfter: false
+					generateBefore: false
+					generateAfter: false
+					# warnOnError: true
+
+		preview:
+			templateData:
+				site:
+					url: ''
+
+					# Development styles
+					styles: [
+						'/css/template.css'
+					]
+
+					# Development scripts
+					scripts: [
+						'/vendor/modernizr.js'
+						'/vendor/jquery.min.js'
+						'/vendor/bootstrap/js/bootstrap.js'
 						#'/vendor/jquery.sticky.js'
 						'/vendor/fastclick.js'
 						'/js/init.js'
@@ -197,32 +231,6 @@ docpadConfig = {
 			plugins:
 				grunt:
 					writeAfter: ["default"]
-					writeBefore: false
-					renderBefore: false
-					renderAfter: false
-					generateBefore: false
-					generateAfter: false
-
-		preview:
-			templateData:
-				site:
-					url: ''
-
-					# The website's styles
-					# See also Environments section below for development styles
-					styles: [
-						'/css/output.min.css'
-					]
-
-					# The website's production scripts.
-					# See also Environments section below for development scripts
-					scripts: [
-						'/js/output.min.js'
-					]
-
-			plugins:
-				grunt:
-					writeAfter: ["production"]
 
 		static:
 			templateData:
@@ -231,17 +239,23 @@ docpadConfig = {
 
 					# Development styles
 					styles: [
-						'/css/output.min.css'
+						'/css/template.css'
 					]
 
 					# Development scripts
 					scripts: [
-						'/js/output.min.js'
+						'/vendor/modernizr.js'
+						'/vendor/jquery.min.js'
+						'/vendor/bootstrap/js/bootstrap.js'
+						#'/vendor/jquery.sticky.js'
+						'/vendor/fastclick.js'
+						'/js/init.js'
+						#'/vendor/60fps-scroll.js'
 					]
 
 			plugins:
 				grunt:
-					writeAfter: ["production"]
+					writeAfter: ["default"]
 
 
 

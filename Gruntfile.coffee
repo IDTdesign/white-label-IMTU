@@ -59,7 +59,6 @@ module.exports = (grunt) ->
 		copy:
 			main:
 				files: [
-					'out/vendor/normalize.css':'bower_components/normalize.css/normalize.css'
 					'out/vendor/modernizr.js':'bower_components/modernizr/modernizr.js'
 					'out/vendor/jquery.min.js':'bower_components/jquery/dist/jquery.min.js'
 					'out/vendor/jquery.min.map':'bower_components/jquery/dist/jquery.min.map'
@@ -91,6 +90,28 @@ module.exports = (grunt) ->
 						'out/css/template.css'
 					]
 
+		# concat files
+		concat:
+			bootstrap:
+				src: [
+					'bower_components/bootstrap/js/transition.js',
+					'bower_components/bootstrap/js/alert.js',
+					'bower_components/bootstrap/js/button.js',
+					'bower_components/bootstrap/js/carousel.js',
+					'bower_components/bootstrap/js/collapse.js',
+					'bower_components/bootstrap/js/dropdown.js',
+					'bower_components/bootstrap/js/modal.js',
+					'bower_components/bootstrap/js/tooltip.js',
+					'bower_components/bootstrap/js/popover.js',
+					'bower_components/bootstrap/js/scrollspy.js',
+					'bower_components/bootstrap/js/tab.js',
+					'bower_components/bootstrap/js/affix.js',
+					'bower_components/jasny-bootstrap/js/offcanvas.js',
+					'bower_components/jasny-bootstrap/js/inputmask.js',
+					'bower_components/bootstrapValidator/dist/js/bootstrapValidator.js'
+				]
+				dest: 'out/vendor/bootstrap/js/bootstrap.js'
+
 		#minify js
 		uglify:
 			out:
@@ -99,6 +120,7 @@ module.exports = (grunt) ->
 						'out/vendor/modernizr-custom.js'
 						'out/vendor/jquery.min.js'
 						#'out/vendor/jquery.sticky.js'
+						'out/vendor/bootstrap/js/bootstrap.js'
 						'out/vendor/fastclick.js'
 						'out/js/init.js'
 						#'out/vendor/60fps-scroll.js'
@@ -279,13 +301,20 @@ module.exports = (grunt) ->
 					'out/**/Thumbs.db'
 				]
 
+		watch:
+			less:
+				files: ['src/files/css/**/*.less']
+				tasks: ['less:out', 'postcss:dev']
+
 	# Build the available Grunt tasks.
 	grunt.loadNpmTasks 'grunt-contrib-less'
 	grunt.loadNpmTasks 'grunt-contrib-cssmin'
 	grunt.loadNpmTasks 'grunt-contrib-jshint'
 	grunt.loadNpmTasks 'grunt-contrib-clean'
+	grunt.loadNpmTasks 'grunt-contrib-concat'
 	grunt.loadNpmTasks 'grunt-contrib-htmlmin'
 	grunt.loadNpmTasks 'grunt-contrib-uglify'
+	grunt.loadNpmTasks 'grunt-contrib-watch'
 	grunt.loadNpmTasks 'grunt-modernizr'
 	grunt.loadNpmTasks 'grunt-ftp-deploy'
 	grunt.loadNpmTasks 'grunt-contrib-copy'
@@ -303,4 +332,5 @@ module.exports = (grunt) ->
 	grunt.registerTask 'svgicons',      ['imagemin:icons', 'svgstore', 'svg2string']
 	grunt.registerTask 'imageoptim',    ['newer:imagemin:src']
 	grunt.registerTask 'production',    ['copy', 'less:out', 'postcss:static', 'cssmin', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean']
-	grunt.registerTask 'default',       ['copy', 'less:out', 'postcss:dev']
+	grunt.registerTask 'watchless',     ['default', 'watch:less']
+	grunt.registerTask 'default',       ['copy', 'concat', 'less:out', 'postcss:dev']
