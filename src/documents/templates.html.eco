@@ -4,36 +4,79 @@ title: 'Homepage'
 ---
 
 <div class="jumbotron">
-    <div class="container">
+    <div class="container text-center">
         <h1>International Mobile Top Up</h1>
         <p>Add funds to prepaid phones of friends and family around the world. It's simple, safe and instant.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Start</a></p>
     </div>
 </div>
 
-<div class="container">
-
-    <section id="recieverAnchor">
+<section id="recieverAnchor" class="page-section">
+    <div class="container">
         <article id="rcAnchor">
-            <h3>To Get Started, Enter an International Mobile Phone Number, Beginning with Country Code</h3>
+            <h2 class="text-center">To Get Started, Enter an International Mobile Phone Number, Beginning with Country Code</h2>
             <form action="/services/international-mobile-topup" autocomplete="off" id="_receiverForm" method="post" novalidate="novalidate">
                <input name="__RequestVerificationToken" type="hidden" value="o1K1xhStBMKhry_IjVeYZxZWEMIuDmGEkChz_Kzy7GKxtL2F-FSQEA6gOBjWDm7o3OciCbp3xpd-JszXBlNtG_telvGEv3fwuxOENFRZ54w1">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-md-8 form-group">
+                    <div class="col-xs-12 col-sm-8 half-gutter-right-sm form-group form-group-lg">
                         <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-                        <input class="form-control form-control-default numericOnly ui-autocomplete-input" data-val="true" data-val-regex="Invalid Phone" data-val-regex-pattern="^[0-9]+$" data-val-required="Recipient's Mobile Number is required." data-val-validatephonelengthif="Invalid Phone" data-val-validatephonelengthif-propertyname="ProductType" id="ReceiverNumber" name="ReceiverNumber" placeholder="Phone Number" producttype="I" type="text" value="" autocomplete="off">
+                        <div class="input-prefix input-prefix-lg">
+                            <span class="input-prefix--plus" id="basic-addon-plus">+</span>
+                            <input class="form-control form-control-default numericOnly ui-autocomplete-input" data-val="true" data-val-regex="Invalid Phone" data-val-regex-pattern="^[0-9]+$" data-val-required="Recipient's Mobile Number is required." data-val-validatephonelengthif="Invalid Phone" data-val-validatephonelengthif-propertyname="ProductType" id="ReceiverNumber" name="ReceiverNumber" placeholder="Contry Code and Phone Number" producttype="I" type="text" value="" autocomplete="off" aria-describedby="basic-addon-plus">
+                        </div>
                         <input id="Country" name="Country" type="hidden" value="">
                         <input id="ProductType" name="ProductType" type="hidden" value="I">
                         <span class="field-validation-valid" data-valmsg-for="ReceiverNumber" data-valmsg-replace="true"></span>
                         <em id="country_flag"></em>
                         <em id="country_desc"></em>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 form-group pull-right">
-                        <input class="btn btn-primary btn-block-xs" type="submit" value="Continue" disabled="disabled">
+                    <div class="col-xs-12 col-sm-4 half-gutter-left-sm form-group form-group-lg">
+                        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Continue" disabled="disabled">
                     </div>
                 </div>
             </form>
         </article>
-    </section>
+    </div>
+</section>
 
-</div>
+<section class="page-section">
+    <div class="container">
+        <h2>How It Works</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Enter the Phone Number</h3>
+                <p>Enter the international mobile number you’d like to recharge.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Confirm the Mobile Carrier</h3>
+                <p>Confirm your loved one's phone carrier is correct or update to the appropriate carrier.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Choose an Amount</h3>
+                <p>Choose the amount that you’d like to send to this phone number.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="container">
+        <h2>Benefits</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Easy</h3>
+                <p>Give the gift of talk — just select a top up amount and the airtime minutes will be on their way.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Worldwide</h3>
+                <p>Recharge mobile phones in over 200 destinations from our website or our award-winning mobile app.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Safe &amp; Instant</h3>
+                <p>Be confident that the phone abroad will be recharged safely and instantly with the amount that you requested.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<% #comment %>

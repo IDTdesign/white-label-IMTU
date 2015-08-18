@@ -31,7 +31,7 @@
             <%- @content %>
         </div>
         <footer class="allpage--footer footer">
-            <div class="footer--nav">
+            <div class="container footer--nav">
                 <p class="footer--left"><a href="<%= @getUrl('#TnCs') %>" class="footer--links">Terms and Conditions</a> <a href="<%= @getUrl('#TnCs') %>" class="footer--links">Privacy Policy</a></p>
                 <p class="footer--right">© BOSS Revolution 2015</p>
             </div>
