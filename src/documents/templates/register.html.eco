@@ -1,0 +1,113 @@
+---
+layout: 'default'
+title: 'Register'
+---
+
+
+<section class="page-section">
+    <article class="container">
+        <h2 class="text-center">
+            Register to create your account. <br>
+            If you’re already a customer, <br>
+            login to continue.
+        </h2>
+
+        <div class="loginform">
+            <div class="panel panel-default">
+                <ul class="panel-heading nav nav-pills nav-justified">
+                    <li class="<%- @isActive('/templates/login/') %>"><a href="<%- @getUrl('/templates/login/') %>">Login</a></li>
+                    <li class="<%- @isActive('/templates/register/') %> "><a href="<%- @getUrl('/templates/register/') %>">Register</a></li>
+                </ul>
+                <div class="panel-body required">
+
+                    <form action="<%- @getUrl('/templates/register/') %>" method="post" novalidate="novalidate">
+                        <div class="form-group">
+                            <h3>Enter Account Details</h3>
+                            <div class="row required has-feedback">
+                                <div class="form-group col-sm-5 quarter-gutter-right-sm">
+                                    <label class="control-label" for="FirstName">First Name</label>
+                                    <input class="form-control" id="FirstName" name="FirstName" placeholder="First Name" type="text" value="">
+                                </div>
+                                <div class="form-group col-sm-7 quarter-gutter-left-sm">
+                                    <label class="control-label" for="LastName">Last Name</label>
+                                    <input class="form-control" id="LastName" name="LastName" placeholder="Last Name" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="row required">
+                                <div class="form-group col-sm-8">
+                                    <label class="control-label" for="Email">Email</label>
+                                    <input class="form-control" id="Email" name="Email" placeholder="Email" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h3>Create Login Information</h3>
+                            <div class="row required">
+                                <div class="form-group col-sm-6 quarter-gutter-right-sm">
+                                    <label class="control-label" for="Password">Password</label>
+                                    <input autocomplete="off" class="form-control" id="Password" name="Password" placeholder="Password" type="password">
+                                </div>
+                                <div class="form-group col-sm-6 quarter-gutter-left-sm">
+                                    <label class="control-label" for="ConfirmPassword">Confirm Password</label>
+                                    <input autocomplete="off" class="form-control" id="ConfirmPassword" name="ConfirmPassword" placeholder="Password" type="password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <p class="text-muted">
+                                    Your password must be at least 8 characters long. It must include at least one uppercase character, one lowercase character and one number.
+                                </p>
+                            </div>
+                            <div class=" required">
+                                <div class="form-group">
+                                    <label class="control-label" for="Q1">Security Question</label>
+                                    <select class="form-control" id="Q1" name="Q1"><option value="What is your favorite pet’s name?">What is your favorite pet’s name?</option>
+                                        <option value="Who is your favorite musician?">Who is your favorite musician?</option>
+                                        <option value="Who is your favorite actor?">Who is your favorite actor?</option>
+                                        <option value="Who was your favorite teacher?">Who was your favorite teacher?</option>
+                                        <option value="What is your favorite sports team?">What is your favorite sports team?</option>
+                                        <option value="What is your favorite country?">What is your favorite country?</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="A1">Your Answer</label>
+                                    <input autocomplete="off" class="form-control" id="A1" name="A1" placeholder="" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="has-feedback">
+                                <div class="form-group">
+                                    <input id="AllowSMS" name="AllowSMS" type="checkbox" value="true"><input name="AllowSMS" type="hidden" value="false">
+                                    <label for="AllowSMS">Yes, please send me special offers, promotions and informational alerts by text message from <%- @site.companyname %> via automated technology to my mobile phone number provided above. I understand that consent is not a condition of purchase. Message and data rates may apply.</label>
+                                    <i style="display: none;" class="form-control-feedback" data-bv-icon-for="rss"></i>
+                                </div>
+                            </div>
+                            <div class="required">
+                                <div class="form-group">
+                                    <p>
+                                        Please confirm that you have read and accept the <a href="/template/terms/" target="_blank"><%- @site.companyname %> Terms</a> and Conditions by checking the Accept box below.
+                                    </p>
+                                    <input id="AcceptTermsAndConditions" name="AcceptTermsAndConditions" type="checkbox" value="true"><input name="AcceptTermsAndConditions" type="hidden" value="false">
+                                    <label class="control-label" for="AcceptTermsAndConditions">I ACCEPT the <%- @site.companyname %> Terms and Conditions.</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-block" value="Register" name="login">
+                        </div>
+                        <div class="form-group text-center">
+                            <a href="<%- @getUrl('/templates/login/forgot/') %>">Forgot Password or Security Code?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+
+
+
+
+
+

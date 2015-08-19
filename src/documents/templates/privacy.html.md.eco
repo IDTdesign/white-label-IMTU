@@ -1,0 +1,11 @@
+---
+layout: 'default'
+title: 'Privacy Policy'
+---
+
+
+<div class="container">
+    <article class="page-section">
+        <%- @partial('privacy') %>
+    </article>
+</div>

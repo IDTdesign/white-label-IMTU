@@ -6,67 +6,31 @@
                 <span class="sr-only">Toggle navigation</span>
                 MENU
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="<%= @getUrl('/templates/') %>">Brand</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="nav navbar-nav">
                 <li class=" <%- @isActive('/templates/') %>"><a href="<%= @getUrl('/templates/') %>">Mobile Top Up</a></li>
-                <li><a href="#">How it works</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
+                <li class=" <%- @isActive('/templates/how-it-works/') %>"><a href="<%= @getUrl('/templates/how-it-works/') %>">How it works</a></li>
+                <li class=" <%- @isActive('/templates/support/') %>"><a href="<%= @getUrl('/templates/support/') %>">Support</a></li>
+                <li class=" <%- @isActive('/templates/faq/') %>"><a href="<%= @getUrl('/templates/faq/') %>">F.A.Q.</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="#lang" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        <span>English&emsp;/&emsp;<span class="flag flag-us"></span></span>
+                        <span>English</span>
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
                         <li class="dropdown-header">Language:</li>
                         <li class="active"><a href="#">English</a></li>
                         <li><a href="#">Español</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Region:</li>
-                        <li class="navbar--submenuitem active">
-                            <a class="navbar--submenulink" href="#"><span class="flag flag-us"></span>&nbsp;US</a>
-                        </li>
-                        <li class="navbar--submenuitem">
-                            <a href="https://www.bossrevolution.ca" class="navbar--submenulink"><span class="flag flag-ca"></span>&nbsp;CA</a>
-                        </li>
-                        <li class="navbar--submenuitem">
-                            <a href="https://www.bossrevolution.co.uk" class="navbar--submenulink"><span class="flag flag-uk"></span>&nbsp;UK</a>
-                        </li>
-                        <li class="navbar--submenuitem">
-                            <a href="https://www.bossrevolution.es" class="navbar--submenulink"><span class="flag flag-es"></span>&nbsp;ES</a>
-                        </li>
-                        <li class="navbar--submenuitem">
-                            <a href="https://www.bossrevolution.de" class="navbar--submenulink"><span class="flag flag-de"></span>&nbsp;DE</a>
-                        </li>
-                        <li class="navbar--submenuitem">
-                            <a href="https://www.bossrevolution.com.hk" class="navbar--submenulink"><span class="flag flag-hk"></span>&nbsp;HK</a>
-                        </li>
-                        <li class="navbar--submenuitem">
-                            <a href="https://www.bossrevolution.com.sg" class="navbar--submenulink"><span class="flag flag-sg"></span>&nbsp;SG</a>
-                        </li>
-                        <li class="navbar--submenuitem">
-                            <a href="https://www.bossrevolution.com.au" class="navbar--submenulink"><span class="flag flag-au"></span>&nbsp;AU</a>
-                        </li>
                     </ul>
                 </li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="<%- @getUrl('/templates/login/') %>">Login</a></li>
+                <li><a href="<%- @getUrl('/templates/register/') %>">Register</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

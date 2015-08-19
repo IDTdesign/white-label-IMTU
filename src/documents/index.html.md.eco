@@ -10,3 +10,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ab, est autem qui
 ## Templates
 
 * [Homepage](<%- @getUrl('/templates/') %>)
+* **Registration**
+  - [Login](<%- @getUrl('/templates/login/') %>)
+  - [Register](<%- @getUrl('/templates/register/') %>)
+  - [Forgot Password](<%- @getUrl('/templates/login/forgot/') %>)
+* **Legal**
+  - [Terms and Conditions](<%- @getUrl('/templates/terms/') %>)
+  - [Privacy Policy](<%- @getUrl('/templates/privacy/') %>)

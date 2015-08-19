@@ -1,0 +1,44 @@
+---
+layout: 'default'
+title: 'Forgot Password'
+---
+
+<section class="page-section">
+    <article class="container">
+        <h2 class="text-center">
+            Forgot Password
+        </h2>
+
+        <div class="loginform loginform-minimal">
+            <div class="panel panel-default">
+                <div class="panel-body required">
+                    <form action="<%- @getUrl('/templates/login/forgot/') %>" method="post" novalidate="novalidate">
+                        <input name="__RequestVerificationToken" type="hidden" value="-dRZYlpQzJujRrsXlUH35IT3HkhQeniISEAK3el1bfbUgMo-SccyrsNjxzhrSSFVanelBbSiEofwVcyZbyeqYMJHeCjP30Fv97Nloijm4vE1">
+                        <div class="form-group">
+                            <label for="UserName">Email</label>
+                            <input class="form-control" data-val="true" data-val-required="The Email OR Phone Number is required." id="UserName" name="UserName" type="text" value="">
+                            <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group captcha">
+                            <label for="Cap">How much is ...</label>
+                            <div class="row">
+                                <a id="cap_link" class="col-xs-5 quarter-gutter-right" style="cursor:pointer">
+                                    <img id="cap" alt="" src2="/captcha" src="<%- @getUrl('/img/sample-captcha.jpg') %>">
+                                </a>
+                                <span class="col-xs-7 quarter-gutter-left">
+                                    <input class=" form-control" data-val="true" data-val-required="The How much is ... is required" id="Cap" name="Cap" type="text" value="">
+                                </span>
+                            </div>
+                            <span class="field-validation-valid" data-valmsg-for="Cap" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary offset-v-bottom-sm" name="send_sms" value="Send SMS" id="send_sms" style="display: none;">
+                            <input type="submit" class="btn btn-primary" name="call_back" value="Call Back" id="call_back" style="display: none;">
+                            <input type="submit" class="btn btn-primary btn-block" value="Next" id="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
