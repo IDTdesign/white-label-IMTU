@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+    <!-- Site Properities -->
+    <title><%= @getPreparedTitle() %></title>
+    <meta name="description" content="<%= @getPreparedDescription() %>" />
+    <meta name="keywords" content="<%= @getPreparedKeywords() %>" />
+
+    <!-- DocPad Meta -->
+    <%- @getBlock('meta').toHTML() %>
+
+    <!-- DocPad Styles + Our Own -->
+    <%- @getBlock('styles').add([].concat(@getUrl(@site.styles) or []).concat(@getUrl(@document.styles) or [])).toHTML() %>
+
+    <!-- Icons -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="<%= @getUrl('/icons/svg-icons.js') %>"></script>
+</head>
+<body class="js-scrollfix">
+    <%- @partial('svg-defs') %>
+    <div class="allpage">
+        <header class="allpage--header">
+            <%- @partial('pageheader') %>
+        </header>
+        <div class="allpage--body">
+            <div class="page-section">
+                <article class="container">
+                    <%- @content %>
+                </article>
+            </div>
+        </div>
+        <footer class="allpage--footer footer">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="navbar-text navbar-left">
+                        © <%- @site.companyname %> 2015
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="<%= @getUrl('/templates/terms/') %>" class="footer--links">Terms and Conditions</a></li>
+                        <li><a href="<%= @getUrl('/templates/privacy/') %>" class="footer--links">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    <!-- DocPad Scripts + Our Own -->
+    <%- @getBlock('scripts').add([].concat(@getUrl(@site.scripts) or []).concat(@getUrl(@document.scripts) or [])).toHTML() %>
+
+    <% if @site.googleAnalyticsId : %>
+        <%- @partial('googleAnalytics') %>
+    <% end %>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+---
+layout: 'default-md'
+title: 'F.A.Q.'
+---
+
+<div class="page-header">
+    <h1>Frequently Asked Questions</h1>
+</div>
+
+<ul class="nav nav-pills">
+  <li role="presentation"><a href="#international-mobile-top-up">International Mobile Top Up</a></li>
+  <li role="presentation"><a href="#my-account">My Account</a></li>
+  <li role="presentation"><a href="#payment-options">Payment Options</a></li>
+</ul>
+
+
+## International Mobile Top Up
+
+### What is International Mobile Top Up?
+
+<%- @site.companyname %> international mobile top-up is a service that allows you to recharge the mobile phones of your loved ones abroad. Topping up a prepaid mobile phone is quick and easy — all you need to know is your recipient's country, mobile phone service provider ("carrier") and mobile phone number.
+
+
+### How do I send an International Mobile Top Up?
+
+Adding funds is easy. Follow these steps:
+
+1. Enter an international mobile phone number
+2. Confirm the mobile carrier
+3. Choose an amount that you'd like to send to this number
+4. Select a payment method
+
+### How much can I top up at one time?
+
+The amount of the top up you can send will depend on your recipient's country and mobile phone service provider. When you set up your order, you will be able to choose from a list of top up amounts.
+
+### How soon is a top up sent?
+
+We send your order immediately to the mobile phone service provider, who is responsible for processing the top up. Most top ups are delivered to the recipient instantly.
+
+Occasionally a mobile service provider may experience a system delay that prevents a top up from being processed immediately. You and your recipient will both receive an SMS confirmation message when the top up has been completed successfully.
+
+### Why is my top up order not being accepted?
+
+When placing your order, be sure to select the correct mobile service provider ("carrier") for the mobile phone number you wish to top up. If you select the wrong carrier, the top up will not be processed.
+
+Also, be sure you are topping up a prepaid mobile phone. Mobile top up cannot be done for phones that are on post-paid service plans.
+
+### What should I do if the recipient did not receive the top up that I sent?
+
+Please contact [customer service](<%- @getUrl('/templates/support/') %>) and provide the details of your order: the transaction ID number and the recipient's mobile phone number, mobile service provider and country. Our Customer Service team will contact the mobile service provider about your top up.
+
+Occasionally a mobile service provider may experience a system delay that prevents a top up from being processed immediately. If you have received a "Pending" notification in your account's [transaction history](<%- @getUrl('/templates/transactions?option=TM&product_filter=I') %>), please wait until you receive final confirmation of the status of your top up order before contacting us.
+
+## My Account
+
+### How do I create a <%- @site.companyname %> account?
+
+If this is the first time you are making a transaction on the <%- @site.companyname %> website, you will create a <%- @site.companyname %> account.
+
+You will then have a set of credentials that will allow you to login to the account center, where you can manage your account or purchase international mobile top-up service.
+
+### How do I login to my <%- @site.companyname %> account?
+
+Follow these steps to login:
+
+1. Go to the [Login](<%- @getUrl('/templates/login/') %>) page.
+2. Enter the email address you provided when you created your <%- @site.companyname %> account.
+3. Enter your password below your email address.
+4. Press the Login button to enter the account center.
+
+### I forgot my password. What should I do?
+
+If you forgot your password, you can reset it by following these steps:
+
+1. Go to the [Login](<%- @getUrl('/templates/login/') %>) page and press the [Forgot Password](<%- @getUrl('/login/forgot/') %>) link.
+2. Enter the email address you provided when you created your <%- @site.companyname %> account and summ of two numbers from security image.
+3. Then answer your security question.
+4. You will receive an email from <%- @site.companyname %> that contains instructions for resetting your password.
+5. After you reset your password, you will be able to login to the account center.
+
+### What can I do in the account center?
+
+The account center puts all of the details in one place. You can:
+
+- Update your contact and payment information
+- Change your email or password
+- Send international mobile top ups
+- View your transactions history
+
+### How do I update information in my account?
+
+Use these links to access specific pages within the account center:
+
+- [Update your password or security question](<%- @getUrl('/templates/my-account/update-profile/') %>)
+- [Update your credit card or bank account information](<%- @getUrl('/templates/my-account/update-profile/') %>)
+
+### How do I view my transaction history?
+
+[Login](<%- @getUrl('/templates/login/') %>) to your account and go to the [Transaction History](<%- @getUrl('/templates/transactions?option=TM&product_filter=I') %>) page. You can view transactions for all top ups in your <%- @site.companyname %> account.
+
+## Payment Options
+
+### What credit and debit cards do you accept?
+
+<%- @site.companyname %> accepts the following cards for payment:
+
+- Visa (credit and debit cards)
+- MasterCard (credit and debit cards)
+- American Express
+- Discover
+
+### Do you accept prepaid cards?
+
+Yes, we do. Please be sure that you have first registered the card with the issuer for online use. This will ensure that your card will be accepted for payment.
+
+### How do I update my card information?
+
+If you need to update your expiration date or other card information, follow these steps:
+
+1. [Login](<%- @getUrl('/templates/login/') %>) to your <%- @site.companyname %> account.
+2. Select Payment Options from the My Account link in the main navigation.
+3. Select the Credit/Debit Card tab and update your card information.
+
+### How does <%- @site.companyname %> protect my card information?
+
+We take security and the confidentiality of our customers' personal information very seriously. All online transactions are conducted according to the highest level of security standards and SSL encryption to prevent customer information from being intercepted. All card information is then encrypted a second time before being stored on our secure billing servers.
+
+We recommend always using the most recent version of your Internet browser, so can you benefit from its latest security features and protect your online transactions.
+
+### Can I purchase <%- @site.companyname %> services using my bank account?
+
+We do not accept payment by bank account at this time.
+
+### Can I pay with a check?
+
+We do not accept personal or bank checks at this time.
