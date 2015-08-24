@@ -5,7 +5,7 @@ title: 'Register'
 
 
 <section class="page-section">
-    <article class="container">
+    <div class="container">
         <h2 class="text-center">
             Register to create your account. <br>
             If you’re already a customer, <br>
@@ -102,12 +102,5 @@ title: 'Register'
                 </div>
             </div>
         </div>
-    </article>
-</section>
-
-
-
-
-
-
-
+    </div>
+</section

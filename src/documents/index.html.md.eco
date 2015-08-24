@@ -10,6 +10,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ab, est autem qui
 ## Templates
 
 * [Homepage](<%- @getUrl('/templates/') %>)
+* **Unregistered flow**
+  - [Purchase](<%- @getUrl('/templates/international-mobile-topup/purchase/') %>)
+  - [login](<%- @getUrl('/templates/login/') %>)
 * **Registration**
   - [Login](<%- @getUrl('/templates/login/') %>)
   - [Register](<%- @getUrl('/templates/register/') %>)

@@ -14,26 +14,7 @@ title: 'Homepage'
     <div class="container">
         <article id="rcAnchor">
             <h2 class="text-center">To Get Started, Enter an International Mobile Phone Number, Beginning with Country Code</h2>
-            <form action="<%- @getUrl('/template/international-mobile-topup/purchase/') %>" autocomplete="off" id="_receiverForm" method="post" novalidate="novalidate">
-               <input name="__RequestVerificationToken" type="hidden" value="o1K1xhStBMKhry_IjVeYZxZWEMIuDmGEkChz_Kzy7GKxtL2F-FSQEA6gOBjWDm7o3OciCbp3xpd-JszXBlNtG_telvGEv3fwuxOENFRZ54w1">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-8 half-gutter-right-sm form-group form-group-lg">
-                        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-                        <div class="input-prefix input-prefix-lg">
-                            <span class="input-prefix--plus" id="basic-addon-plus">+</span>
-                            <input class="form-control form-control-default numericOnly ui-autocomplete-input" data-val="true" data-val-regex="Invalid Phone" data-val-regex-pattern="^[0-9]+$" data-val-required="Recipient's Mobile Number is required." data-val-validatephonelengthif="Invalid Phone" data-val-validatephonelengthif-propertyname="ProductType" id="ReceiverNumber" name="ReceiverNumber" placeholder="Contry Code and Phone Number" producttype="I" type="text" value="" autocomplete="off" aria-describedby="basic-addon-plus">
-                        </div>
-                        <input id="Country" name="Country" type="hidden" value="">
-                        <input id="ProductType" name="ProductType" type="hidden" value="I">
-                        <span class="field-validation-valid" data-valmsg-for="ReceiverNumber" data-valmsg-replace="true"></span>
-                        <em id="country_flag"></em>
-                        <em id="country_desc"></em>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 half-gutter-left-sm form-group form-group-lg">
-                        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Continue">
-                    </div>
-                </div>
-            </form>
+            <%- @partial("mtu/_RecieverNumber") %>
         </article>
     </div>
 </section>

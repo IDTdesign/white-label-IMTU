@@ -5,12 +5,12 @@ title: 'Login'
 
 
 <section class="page-section">
-    <article class="container">
-        <h2 class="text-center">
+    <div class="container">
+        <h1 class="text-center">
             Register to create your account. <br>
             If you’re already a customer, <br>
             login to continue.
-        </h2>
+        </h1>
 
         <div class="loginform loginform-minimal">
             <div class="panel panel-default">
@@ -41,5 +41,5 @@ title: 'Login'
                 </div>
             </div>
         </div>
-    </article>
+    </div>
 </section>

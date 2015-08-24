@@ -68,6 +68,11 @@ module.exports = (grunt) ->
 					#'out/vendor/jquery.scrollTo/jquery.scrollTo.min.js':'bower_components/jquery.scrollTo/jquery.scrollTo.min.js'
 					#'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js'
 				]
+			repo:
+				files: [
+					'../BrCustomer/BrCustomerSite/Content/css/template.css' : 'out/css/template.css'
+					'../BrCustomer/BrCustomerSite/Content/css/template.css.map' : 'out/css/template.css.map'
+				]
 
 		# compile less and generate map files
 		less:
@@ -304,7 +309,7 @@ module.exports = (grunt) ->
 		watch:
 			less:
 				files: ['src/files/css/**/*.less']
-				tasks: ['less:out', 'postcss:dev']
+				tasks: ['less:out', 'postcss:dev', 'copy:repo']
 
 	# Build the available Grunt tasks.
 	grunt.loadNpmTasks 'grunt-contrib-less'
@@ -331,6 +336,6 @@ module.exports = (grunt) ->
 	grunt.registerTask 'lint',          ['recess', 'htmllint']
 	grunt.registerTask 'svgicons',      ['imagemin:icons', 'svgstore', 'svg2string']
 	grunt.registerTask 'imageoptim',    ['newer:imagemin:src']
-	grunt.registerTask 'production',    ['copy', 'less:out', 'postcss:static', 'cssmin', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean']
+	grunt.registerTask 'production',    ['copy:main', 'less:out', 'postcss:static', 'cssmin', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean']
 	grunt.registerTask 'watchless',     ['default', 'watch:less']
-	grunt.registerTask 'default',       ['copy', 'concat', 'less:out', 'postcss:dev']
+	grunt.registerTask 'default',       ['copy:main', 'concat', 'less:out', 'postcss:dev']

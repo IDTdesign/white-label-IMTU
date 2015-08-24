@@ -31,9 +31,16 @@
             <%- @content %>
         </div>
         <footer class="allpage--footer footer">
-            <div class="container footer--nav">
-                <p class="footer--left"><a href="<%= @getUrl('/templates/terms/') %>" class="footer--links">Terms and Conditions</a> <a href="<%= @getUrl('/templates/privacy/') %>" class="footer--links">Privacy Policy</a></p>
-                <p class="footer--right">© <%- @site.companyname %> 2015</p>
+            <div class="container">
+                <nav class="navbar">
+                    <div class="navbar-text navbar-left">
+                        © <%- @site.companyname %> 2015
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="<%= @getUrl('/templates/terms/') %>" class="footer--links">Terms and Conditions</a></li>
+                        <li><a href="<%= @getUrl('/templates/privacy/') %>" class="footer--links">Privacy Policy</a></li>
+                    </ul>
+                </nav>
             </div>
         </footer>
     </div>
