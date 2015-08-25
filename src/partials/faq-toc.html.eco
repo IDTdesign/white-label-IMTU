@@ -1,0 +1,32 @@
+<ul class="nav nav-stacked nav-aside" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+    <li role="presentation"><a href="#international-mobile-top-up">International Mobile Top Up</a>
+        <ul class="nav nav-stacked nav-aside nav-aside-sub">
+            <li role="presentation"><a href="#what-is-international-mobile-top-up-">What is International Mobile Top Up?</a></li>
+            <li role="presentation"><a href="#how-do-i-send-an-international-mobile-top-up-">How do I send an International Mobile Top Up?</a></li>
+            <li role="presentation"><a href="#how-much-can-i-top-up-at-one-time-">How much can I top up at one time?</a></li>
+            <li role="presentation"><a href="#how-soon-is-a-top-up-sent-">How soon is a top up sent?</a></li>
+            <li role="presentation"><a href="#why-is-my-top-up-order-not-being-accepted-">Why is my top up order not being accepted?</a></li>
+            <li role="presentation"><a href="#what-should-i-do-if-the-recipient-did-not-receive-the-top-up-that-i-sent-">What should I do if the recipient did not receive the top up that I sent?</a></li>
+        </ul>
+    </li>
+    <li role="presentation"><a href="#my-account">My Account</a>
+        <ul class="nav nav-stacked nav-aside nav-aside-sub">
+            <li role="presentation"><a href="#how-do-i-create-a-company-name-account-">How do I create a <%- @site.companyname %> account?</a></li>
+            <li role="presentation"><a href="#how-do-i-login-to-my-company-name-account-">How do I login to my <%- @site.companyname %> account?</a></li>
+            <li role="presentation"><a href="#i-forgot-my-password-what-should-i-do-">I forgot my password. What should I do?</a></li>
+            <li role="presentation"><a href="#what-can-i-do-in-the-account-center-">What can I do in the account center?</a></li>
+            <li role="presentation"><a href="#how-do-i-update-information-in-my-account-">How do I update information in my account?</a></li>
+            <li role="presentation"><a href="#how-do-i-view-my-transaction-history-">How do I view my transaction history?</a></li>
+        </ul>
+    </li>
+    <li role="presentation"><a href="#payment-options">Payment Options</a>
+        <ul class="nav nav-stacked nav-aside nav-aside-sub">
+            <li role="presentation"><a href="#what-credit-and-debit-cards-do-you-accept-">What credit and debit cards do you accept?</a></li>
+            <li role="presentation"><a href="#do-you-accept-prepaid-cards-">Do you accept prepaid cards?</a></li>
+            <li role="presentation"><a href="#how-do-i-update-my-card-information-">How do I update my card information?</a></li>
+            <li role="presentation"><a href="#how-does-company-name-protect-my-card-information-">How does <%- @site.companyname %> protect my card information?</a></li>
+            <li role="presentation"><a href="#can-i-purchase-company-name-services-using-my-bank-account-">Can I purchase <%- @site.companyname %> services using my bank account?</a></li>
+            <li role="presentation"><a href="#can-i-pay-with-a-check-">Can I pay with a check?</a></li>
+        </ul>
+    </li>
+</ul>
