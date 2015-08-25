@@ -1,0 +1,71 @@
+.paymentcard-list {}
+
+.paymentcard-item {
+    .well;
+}
+
+//mobile view
+@media (max-width: @screen-xs-max) {
+
+    .paymentcard-address {
+        font-size: @font-size-small;
+    }
+}
+
+.paymentcard-main {
+    display: block;
+}
+
+.paymentcard-icon {}
+
+.paymentcard-number {}
+
+.paymentcard-details {}
+
+.paymentcard-address {}
+
+.paymentcard-action {}
+
+.paymentcard-radiolist {
+    list-style-type: none;
+    padding-left: 0;
+
+    @media (max-width: @screen-xs-max) {
+
+        .paymentcard-number,
+        .paymentcard-address,
+        .paymentcard-icon,
+        .paymentcard-action {
+            display: block;
+        }
+    }
+
+    @media (min-width: @screen-sm-min) {
+
+        .paymentcard-number,
+        .paymentcard-address,
+        .paymentcard-icon,
+        .paymentcard-action {
+            padding: 0  @padding-base-horizontal;
+        }
+    }
+}
+
+.paymentcard-radiolist-item {
+    margin: @line-height-computed 0;
+}
+
+.paymentcard-radiolist-label {
+    display: block;
+
+    .row {
+        display: block;
+    }
+}
+
+/* custom: for white and transparent png on white background */
+.paymentcard-icon img[src*="Checking.png"] {
+    background-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+}

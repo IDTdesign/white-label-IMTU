@@ -1,0 +1,68 @@
+/*
+
+# input-prefix
+
+For adding «+» sign into international phone number input.
+
+Available two size modifications:
+
+* `.input-prefix-sm`
+* `.input-prefix-lg`
+
+```html
+<div class="input-prefix input-prefix-lg">
+    <span class="input-prefix--plus" id="basic-addon-plus">+</span>
+    <input class="form-control" placeholder="Contry Code + Phone Number" type="text" value="" aria-describedby="basic-addon-plus">
+</div>
+```
+
+*/
+
+
+.input-prefix {
+    position: relative;
+
+    & > .input-prefix--plus {
+        position: absolute;
+        height: @input-height-base;
+        padding: @padding-base-vertical 0 @padding-base-vertical @padding-base-horizontal;
+        font-size: @font-size-base;
+        line-height: @line-height-base;
+        border-radius: @input-border-radius;
+        color: @input-color;
+
+        & + .form-control {
+            padding-left: (@padding-base-horizontal * 2);
+        }
+    }
+
+    &.input-prefix-sm {
+
+        & > .input-prefix--plus {
+            height: @input-height-small;
+            padding: @padding-small-vertical 0 @padding-small-vertical @padding-small-horizontal;
+            font-size: @font-size-small;
+            line-height: @line-height-small;
+            border-radius: @input-border-radius-small;
+
+            & + .form-control {
+                padding-left: (@padding-small-horizontal * 2);
+            }
+        }
+    }
+
+    &.input-prefix-lg {
+
+        & > .input-prefix--plus {
+            height: @input-height-large;
+            padding: @padding-large-vertical 0 @padding-large-vertical @padding-large-horizontal;
+            font-size: @font-size-large;
+            line-height: @line-height-large;
+            border-radius: @input-border-radius-large;
+
+            & + .form-control {
+                padding-left: (@padding-large-horizontal * 2);
+            }
+        }
+    }
+}

@@ -4,12 +4,15 @@
 
 */
 
+
+/* 1 - hardcoded width for col-md-4 minus gutter-width for paddings */
+
 .affix {
     @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-        width: (324px - (@grid-gutter-width));
+        width: (324px - @grid-gutter-width); /* 1 */
     }
     @media (min-width: @screen-lg-min) {
-        width: (390px - (@grid-gutter-width));
+        width: (390px - @grid-gutter-width); /* 1 */
     }
 }
 
