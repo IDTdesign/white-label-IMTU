@@ -1,6 +1,4 @@
-<div class="page-header">
-    <h1>Terms and Conditions</h1>
-</div>
+
 
 IDT International Mobile Top Up (“IMTU”) customers can opt-in to receiving marketing text
 messages via automated technology from IDT on their mobile phone. Messages may include

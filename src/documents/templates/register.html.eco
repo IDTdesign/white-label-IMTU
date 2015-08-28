@@ -8,8 +8,7 @@ title: 'Register'
     <div class="container">
         <h2 class="text-center">
             Register to create your account. <br>
-            If you’re already a customer, <br>
-            login to continue.
+            If you’re already a customer, login to continue.
         </h2>
 
         <div class="loginform">
@@ -20,7 +19,7 @@ title: 'Register'
                 </ul>
                 <div class="panel-body required">
 
-                    <form action="<%- @getUrl('/templates/register/') %>" method="post" novalidate="novalidate">
+                    <form action="<%- @getUrl('/templates/my-account/') %>" method="post" novalidate="novalidate">
                         <div class="form-group">
                             <h3>Enter Account Details</h3>
                             <div class="row required has-feedback">
@@ -70,22 +69,16 @@ title: 'Register'
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label" for="A1">Your Answer</label>
-                                    <input autocomplete="off" class="form-control" id="A1" name="A1" placeholder="" type="text" value="">
+                                    <input autocomplete="off" class="form-control input-validation-error" id="A1" name="A1" placeholder="" type="text" value="">
+                                    <span class="field-validation-error">Your Answer is required.</span>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="has-feedback">
-                                <div class="form-group">
-                                    <input id="AllowSMS" name="AllowSMS" type="checkbox" value="true"><input name="AllowSMS" type="hidden" value="false">
-                                    <label for="AllowSMS">Yes, please send me special offers, promotions and informational alerts by text message from <%- @site.companyname %> via automated technology to my mobile phone number provided above. I understand that consent is not a condition of purchase. Message and data rates may apply.</label>
-                                    <i style="display: none;" class="form-control-feedback" data-bv-icon-for="rss"></i>
-                                </div>
-                            </div>
                             <div class="required">
                                 <div class="form-group">
                                     <p>
-                                        Please confirm that you have read and accept the <a href="/template/terms/" target="_blank"><%- @site.companyname %> Terms</a> and Conditions by checking the Accept box below.
+                                        Please confirm that you have read and accept the <a href="/templates/terms/" target="_blank"><%- @site.companyname %> Terms</a> and Conditions by checking the Accept box below.
                                     </p>
                                     <input id="AcceptTermsAndConditions" name="AcceptTermsAndConditions" type="checkbox" value="true"><input name="AcceptTermsAndConditions" type="hidden" value="false">
                                     <label class="control-label" for="AcceptTermsAndConditions">I ACCEPT the <%- @site.companyname %> Terms and Conditions.</label>
@@ -93,14 +86,11 @@ title: 'Register'
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary btn-block" value="Register" name="login">
-                        </div>
-                        <div class="form-group text-center">
-                            <a href="<%- @getUrl('/templates/login/forgot/') %>">Forgot Password or Security Code?</a>
+                            <a class="btn btn-primary btn-block" href="<%- @getUrl('/templates/my-account/') %>">Register</a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-</section
+</section>

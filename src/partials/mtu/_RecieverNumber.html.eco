@@ -14,7 +14,7 @@
             <em id="country_desc"></em>
         </div>
         <div class="col-xs-12 col-sm-4 half-gutter-left-sm form-group form-group-lg">
-            <input class="btn btn-primary btn-lg btn-block" type="submit" value="Continue">
+            <a class="btn btn-primary btn-lg btn-block" href="<%- @getUrl('/templates/international-mobile-topup/purchase/') %>">Continue</a>
         </div>
     </div>
 </form>

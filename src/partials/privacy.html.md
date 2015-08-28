@@ -1,3 +1,3 @@
-# Privacy Policy
+
 
 lorem ipsum

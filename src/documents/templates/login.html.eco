@@ -7,9 +7,8 @@ title: 'Login'
 <section class="page-section">
     <div class="container">
         <h1 class="text-center">
-            Register to create your account. <br>
-            If you’re already a customer, <br>
-            login to continue.
+            Login to continue. <br>
+            If you’re not a customer, register to create your account
         </h1>
 
         <div class="loginform loginform-minimal">
@@ -19,7 +18,7 @@ title: 'Login'
                     <li class="<%- @isActive('/templates/register/') %> "><a href="<%- @getUrl('/templates/register/') %>">Register</a></li>
                 </ul>
                 <div class="panel-body required">
-                    <form action="/login?ReturnUrl=%2Fmy-account" method="post" novalidate="novalidate">
+                    <form action="<%- @getUrl('/templates/my-account/') %>" method="post" novalidate="novalidate">
                         <input name="__RequestVerificationToken" type="hidden" value="uNK_j63vjfm5S4yqqPiv2CWCmMZAPI29Y_x8M4fEF5hVoWwQTAVXpOFnp0XoW27sSwBQ0eqb4x8f17LRzdT1IZKYAxSJZhT8HXzLfNzSQ541">
                         <input id="Service" name="Service" type="hidden" value="Unknown">
                         <input id="TopupCard" name="TopupCard" type="hidden" value="False">
@@ -32,10 +31,10 @@ title: 'Login'
                             <input autocomplete="off" class="form-control" id="Password" name="Password" placeholder="Password" type="password">
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary btn-block" value="Login" name="login">
+                            <a class="btn btn-primary btn-block" href="<%- @getUrl('/templates/my-account/') %>">Login</a>
                         </div>
                         <div class="form-group text-center">
-                            <a href="<%- @getUrl('/templates/login/forgot/') %>">Forgot Password or Security Code?</a>
+                            <a href="<%- @getUrl('/templates/login/forgot/') %>">Forgot Password?</a>
                         </div>
                     </form>
                 </div>

@@ -64,9 +64,9 @@ module.exports = (grunt) ->
 					'out/vendor/jquery.min.map':'bower_components/jquery/dist/jquery.min.map'
 					#'out/vendor/60fps-scroll.js':'bower_components/60fps-scroll/dist/60fps-scroll.js'
 					'out/vendor/fastclick.js':'bower_components/fastclick/lib/fastclick.js'
-					#'out/vendor/jquery.sticky.js':'bower_components/sticky/jquery.sticky.js'
-					#'out/vendor/jquery.scrollTo/jquery.scrollTo.min.js':'bower_components/jquery.scrollTo/jquery.scrollTo.min.js'
-					#'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js'
+					'out/vendor/jquery.sticky.js':'bower_components/sticky/jquery.sticky.js'
+					'out/vendor/jquery.scrollTo/jquery.scrollTo.min.js':'bower_components/jquery.scrollTo/jquery.scrollTo.min.js'
+					'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js'
 				]
 			repo:
 				files: [

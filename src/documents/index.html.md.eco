@@ -10,6 +10,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ab, est autem qui
 ## Templates
 
 * [Homepage](<%- @getUrl('/templates/') %>)
+* [How It Works](<%- @getUrl('/templates/how-it-works/') %>)
+* [Support](<%- @getUrl('/templates/support/') %>)
+* [FAQs](<%- @getUrl('/templates/faq/') %>)
 * **Unregistered flow**
   - [Purchase](<%- @getUrl('/templates/international-mobile-topup/purchase/') %>)
   - [login](<%- @getUrl('/templates/login/') %>)
@@ -17,6 +20,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ab, est autem qui
   - [Login](<%- @getUrl('/templates/login/') %>)
   - [Register](<%- @getUrl('/templates/register/') %>)
   - [Forgot Password](<%- @getUrl('/templates/login/forgot/') %>)
+  - [Verify Security Question](<%- @getUrl('/templates/login/forgot/verify-qa/') %>)
+  - [Forgot Message](<%- @getUrl('/templates/login/forgot/forgot-message/') %>)
+* [My Account](<%- @getUrl('/templates/my-account/') %>)
+  - [Edit Personal Profile](<%= @getUrl('/templates/my-account/update-profile/') %>)
+  - [Update Email](<%= @getUrl('/templates/my-account/update-email/') %>)
+  - [Security](<%= @getUrl('/templates/my-account/security/') %>)
+  - [Payment Options](<%= @getUrl('/templates/my-account/payment-options/') %>)
+  - [See All Transactions](<%= @getUrl('/templates/my-account/transactions/') %>)
 * **Legal**
   - [Terms and Conditions](<%- @getUrl('/templates/terms/') %>)
   - [Privacy Policy](<%- @getUrl('/templates/privacy/') %>)

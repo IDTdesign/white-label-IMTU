@@ -18,12 +18,13 @@
     "tests"
   ],
   "dependencies": {
-    "modernizr": "~2.8.3",
-    "jquery": "~2.1.4",
-    "sticky": "~1.0.1",
     "60fps-scroll": "~0.1.1",
+    "bootstrap": "~3.3.5",
     "fastclick": "~1.0.6",
+    "jquery": "~2.1.4",
+    "jquery.localScroll": "~1.4.0",
+    "modernizr": "~2.8.3",
     "normalize.css": "~3.0.3",
-    "bootstrap": "~3.3.5"
+    "sticky": "~1.0.1"
   }
 }

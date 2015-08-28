@@ -21,25 +21,38 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <script src="<%= @getUrl('/icons/svg-icons.js') %>"></script>
 </head>
-<body class="js-scrollfix" data-spy="scroll" data-target="#navbar-aside">
+<body class="js-scrollfix" data-spy="scroll" data-target=".local-nav">
     <%- @partial('svg-defs') %>
     <div class="allpage">
         <header class="allpage--header">
+        <% if (@document.loggedin) : %>
+            <%- @partial('pageheader-logged-in') %>
+        <% else : %>
             <%- @partial('pageheader') %>
+        <% end %>
         </header>
         <div class="allpage--body">
+            <header class="jumbotron">
+                <div class="container">
+                    <h1 class="text-center"><%- @document.title %></h1>
+                </div>
+            </header>
             <div class="page-section">
                 <div class="container">
+                <% if (@document.sidebar) : %>
                     <div class="row">
                         <article class="col-md-8">
                             <%- @content %>
                         </article>
                         <aside class="col-md-4">
-                            <div id="navbar-aside">
-                                <%- @partial('faq-toc') %>
+                            <div class="local-nav">
+                                <%- @partial(@document.sidebar) %>
                             </div>
                         </aside>
                     </div>
+                <% else : %>
+                    <%- @content %>
+                <% end %>
                 </div>
             </div>
         </div>

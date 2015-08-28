@@ -1,0 +1,17 @@
+---
+layout: 'default'
+title: 'Forgot Message'
+---
+
+<section class="page-section">
+    <div class="container">
+        <h2 class="text-center">@T.Login.ForgotPasswordSecurityCode</h2>
+        <div class="loginform">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p class="text-center">@ViewBag.Message</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

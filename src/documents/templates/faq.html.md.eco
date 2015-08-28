@@ -1,11 +1,8 @@
 ---
 layout: 'default-md'
-title: 'F.A.Q.'
+title: 'Frequently Asked Questions'
+sidebar: 'faq-toc'
 ---
-
-<div class="page-header">
-    <h1>Frequently Asked Questions</h1>
-</div>
 
 ## International Mobile Top Up
 

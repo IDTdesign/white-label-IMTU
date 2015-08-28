@@ -12,7 +12,7 @@ title: 'Forgot Password'
         <div class="loginform loginform-minimal">
             <div class="panel panel-default">
                 <div class="panel-body required">
-                    <form action="<%- @getUrl('/templates/login/forgot/') %>" method="post" novalidate="novalidate">
+                    <form action="<%- @getUrl('/templates/login/forgot/verify-qa/') %>" method="post" novalidate="novalidate">
                         <input name="__RequestVerificationToken" type="hidden" value="-dRZYlpQzJujRrsXlUH35IT3HkhQeniISEAK3el1bfbUgMo-SccyrsNjxzhrSSFVanelBbSiEofwVcyZbyeqYMJHeCjP30Fv97Nloijm4vE1">
                         <div class="form-group">
                             <label for="UserName">Email</label>
@@ -34,7 +34,7 @@ title: 'Forgot Password'
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary offset-v-bottom-sm" name="send_sms" value="Send SMS" id="send_sms" style="display: none;">
                             <input type="submit" class="btn btn-primary" name="call_back" value="Call Back" id="call_back" style="display: none;">
-                            <input type="submit" class="btn btn-primary btn-block" value="Next" id="submit">
+                            <a class="btn btn-primary btn-block" href="<%- @getUrl('/templates/login/forgot/verify-qa/') %>">Next</a>
                         </div>
                     </form>
                 </div>

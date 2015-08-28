@@ -95,4 +95,16 @@ jQuery(document).ready(function ($) {
     $(function () {
         FastClick.attach(document.body);
     });
+
+    // local navigation
+    $(".local-nav")
+    .sticky({
+        topSpacing: 0,
+        wrapperClassName: "hold",
+        className: "fixed-local-nav"
+    })
+    .localScroll({
+        offset: -70,
+        duration: 500
+    });
 });

@@ -1,4 +1,4 @@
-<ul class="nav nav-stacked nav-aside" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+<ul class="nav nav-stacked nav-aside">
     <li role="presentation"><a href="#international-mobile-top-up">International Mobile Top Up</a>
         <ul class="nav nav-stacked nav-aside nav-aside-sub">
             <li role="presentation"><a href="#what-is-international-mobile-top-up-">What is International Mobile Top Up?</a></li>
