@@ -30,7 +30,7 @@ Then do the next:
 
 `docpad run --env preview` — to preview optimized version
 
-`docpad deploy-ghpages --env static` — publish to http://IDTdesign.github.io/BRGPR
+`docpad deploy-ghpages --env static` — publish to http://IDTdesign.github.io/white-label-IMTU
 
 ### Custom grunt tasks
 
@@ -46,7 +46,7 @@ There are 3 environments in the project:
 
 1. **Development** — default environment. No minification or concatenation on styles and scripts. Default Modernizr.js.
 2. **Preview** — optimized for faster loading. All styles merged one file and minified. Same with scripts, output script uses custom Modernizr build. HTML minified and GZIPped.
-3. **Static** — same as preview but generated site uses direct urls for http://IDTdesign.github.io/BRGPR
+3. **Static** — same as preview but generated site uses direct urls for http://IDTdesign.github.io/white-label-IMTU
 
 ## Publishing
 
