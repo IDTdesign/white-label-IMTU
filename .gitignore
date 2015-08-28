@@ -21,3 +21,6 @@ out/
 # Custom
 
 src/files/vendor
+
+*.sublime-workspace
+*.sublime-project
