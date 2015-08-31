@@ -1,0 +1,98 @@
+---
+title: 'Update Profile'
+layout: 'default'
+loggedin: true
+---
+
+<div class="page-section">
+    <div class="container">
+        <section class="">
+            <%- @partial('Account/_Breadcrumb') %>
+            <h1 class="">Update Profile</h1>
+            <!-- Nav tabs -->
+            <%- @partial('Account/_UpdateMenu') %>
+        </section>
+        <section class="page-section">
+            <article class="tab-links form-group">
+                <ul class="nav nav-pane nav-pills nav-justified" role="tablist">
+                    <li class="active"><a href="#account-passw" role="tab" data-toggle="tab">Account Password</a></li>
+                    <li><a href="#account-qa" role="tab" data-toggle="tab">Question / Answer</a></li>
+                </ul>
+            </article>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <article class="tab-pane fade in active" id="account-passw">
+                    <header class="island-header text-center">
+                        <h2>Account Password</h2>
+                    </header>
+                    <form action="/my-account/update-password" method="post" novalidate="novalidate">
+                        <input name="__RequestVerificationToken" type="hidden" value="o0gmdEae5FLWLdExVKbeM6kXD0dEsFJsVSSkYM7NZE0B9t2uI3E7-yPyGkJdwdgZj6hIGHHCI5f9Jf-vsqTMIjQOG6UBsEtlAgBJiN7oaY4r7o1o9jV_zXPxI5XIGgJ90">
+                        <div class="row">
+                            <div class="form-group col-sm-8 col-sm-push-2 col-md-6 col-md-push-3">
+                                <label class="control-label" for="OldPassword">Old Password</label>
+                                <input autocomplete="off" class="form-control" data-val="true" data-val-required="Old Password is required." id="OldPassword" name="OldPassword" type="password">
+                                <span class="field-validation-valid" data-valmsg-for="OldPassword" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-8 col-sm-push-2 col-md-6 col-md-push-3">
+                                <label class="control-label" for="Password">New Password</label>
+                                <input autocomplete="off" class="form-control" data-val="true" data-val-required="New Password is required." id="Password" name="Password" type="password">
+                                <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-8 col-sm-push-2 col-md-6 col-md-push-3">
+                                <label class="control-label" for="ConfirmPassword">Confirm New Password</label>
+                                <input autocomplete="off" class="form-control" data-val="true" data-val-equalto="Passwords do not match" data-val-equalto-other="*.Password" data-val-required="Confirm New Password is required." id="ConfirmPassword" name="ConfirmPassword" type="password">
+                                <span class="field-validation-valid" data-valmsg-for="ConfirmPassword" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-8 col-sm-push-2 col-md-6 col-md-push-3 text-center">
+                                <input type="submit" class="btn btn-primary btn-block-xs" value="Update">
+                                <a class="btn btn-default btn-block-xs" href="/my-account">Cancel</a>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <article class="tab-pane fade" id="account-qa">
+                    <header class="island-header text-center">
+                        <h2>Question / Answer</h2>
+                    </header>
+                    <form action="/my-account/update-qa" method="post" novalidate="novalidate">
+                        <input name="__RequestVerificationToken" type="hidden" value="pooRlRG17X22LI79q_oadNCaYdfbTgQmNuX6PphsyEK7DcjRuAtI2kqEuy_-NgNDxtcEPUypWvZpusTgT_KUoZgR3rtp_z8CwcLLAx5nIJfiZ00IBft9XMT2_vTyCljs0">
+                        <div class="row required has-feedback">
+                            <div class="form-group col-sm-8 col-sm-push-2 col-md-6 col-md-push-3">
+                                <label for="Q1">Security Question</label>
+                                <select class="form-control form-control-default" data-val="true" data-val-required="Security Question is required." id="Q1" name="Q1">
+                                    <option value="What is your favorite pet’s name?">What is your favorite pet’s name?</option>
+                                    <option value="Who is your favorite musician?">Who is your favorite musician?</option>
+                                    <option value="Who is your favorite actor?">Who is your favorite actor?</option>
+                                    <option value="Who was your favorite teacher?">Who was your favorite teacher?</option>
+                                    <option value="What is your favorite sports team?">What is your favorite sports team?</option>
+                                    <option value="What is your favorite country?">What is your favorite country?</option>
+                                </select>
+                                <span class="field-validation-valid" data-valmsg-for="Q1" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="row required has-feedback">
+                            <div class="form-group col-sm-8 col-sm-push-2 col-md-6 col-md-push-3">
+                                <label for="A1">Your Answer</label>
+                                <input autocomplete="off" class="form-control form-control-default" data-val="true" data-val-required="Your Answer is required." id="A1" name="A1" type="text" value="">
+                                <span class="field-validation-valid" data-valmsg-for="A1" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-8 col-sm-push-2 col-md-6 col-md-push-3 text-center">
+                                <input type="submit" class="btn btn-primary btn-block-xs" value="Update">
+                                <a class="btn btn-default btn-block-xs" href="/my-account">Cancel</a>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </div>
+</div>

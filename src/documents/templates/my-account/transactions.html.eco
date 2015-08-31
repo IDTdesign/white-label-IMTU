@@ -7,7 +7,9 @@ loggedin: true
 <div class="page-section">
     <div class="container">
         <div class="island island-default">
+            <%- @partial('Account/_Breadcrumb') %>
             <h1 class="island--title">Billing History</h1>
+
             <form action="/my-account/transactions?option=2D&amp;product_filter=ALL" method="get" novalidate="novalidate">
                 <div class="forms-default">
                     <div class="row">

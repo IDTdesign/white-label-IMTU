@@ -1,0 +1,6 @@
+            <ul class="nav nav-justified nav-tabs">
+                <li class="<%- @isActive('/templates/my-account/update-profile/') %>">  <a href="<%= @getUrl('/templates/my-account/update-profile/') %>">Personal</a></li>
+                <li class="<%- @isActive('/templates/my-account/update-email/') %>">    <a href="<%= @getUrl('/templates/my-account/update-email/') %>">Email</a></li>
+                <li class="<%- @isActive('/templates/my-account/security/') %>">        <a href="<%= @getUrl('/templates/my-account/security/') %>">Security</a></li>
+                <li class="<%- @isActive('/templates/my-account/payment-options/') %>"> <a href="<%= @getUrl('/templates/my-account/payment-options/') %>">Payment Options</a></li>
+            </ul>

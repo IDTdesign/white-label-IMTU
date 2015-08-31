@@ -12,7 +12,7 @@ title: 'Homepage'
 
 <section id="recieverAnchor" class="page-section">
     <div class="container">
-        <article id="rcAnchor" class="well well-lg">
+        <article id="rcAnchor" class="well well-lg well-fullwidth-xs well-wide">
             <h2 class="text-center">To Get Started, Enter an International Mobile Phone Number, Beginning with Country Code</h2>
             <%- @partial("mtu/_RecieverNumber") %>
         </article>
