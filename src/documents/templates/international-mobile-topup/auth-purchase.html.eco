@@ -15,17 +15,6 @@ title: 'Purchase'
 
 <form action="<%- @getUrl('/templates/international-mobile-topup/auth-purchase/') %>" autocomplete="off" method="post" novalidate="novalidate">
 
-    <div class="container">
-        <div class="flash flash-error">
-            There was an error processing the request.
-            Please try again or if the problem persists, please contact Customer Service. - Api Error: PLATFORM_ERROR - Fireball Error: Invalid Phone Number
-        </div>
-        <div class="flash flash-error">
-            There was an error processing the request.
-            Please try again or if the problem persists, please contact Customer Service. - Api Error: platform2 - Error getting Application Pool information:Your Credit Card does not belong to your pool
-        </div>
-    </div>
-
     <section class="page-section">
         <div class="container">
             <div class="row">
@@ -164,6 +153,22 @@ title: 'Purchase'
                                     </div>
                                 </div>
                             </div>
+                            <div class="form-group required">
+                                <div class="row">
+                                    <div class="col-lg-10 col-xs-9">
+                                        <label class="control-label" for="SenderNumber">Sender Number</label>
+                                        <br>
+                                        <input class="form-control text-box single-line" data-val="true" data-val-regex="Invalid Phone" data-val-regex-pattern="^[0-9]+$" data-val-required="Sender Number is required." id="SenderNumber" name="SenderNumber" type="text" value="3334445678">
+                                        <span class="field-validation-valid" data-valmsg-for="SenderNumber" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <input data-val="true" data-val-required="The Receive Promotion field is required." id="sms-alerts" name="ReceivePromotion" type="checkbox" value="true"><input name="ReceivePromotion" type="hidden" value="false">
+                                    <label for="sms-alerts">Allow us to send SMS alerts related to this carrier and country.</label>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="page-section">
@@ -210,9 +215,117 @@ title: 'Purchase'
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group col-xs-6 col-sm-3">
-                                <a href="<%- @getUrl('/templates/international-mobile-topup/auth-purchase/') %>" class="btn btn-lg btn-block btn-primary">Next</a>
+
+                        <div class="page-section">
+                            <h2>Select a Top Up Amount</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="form-group" style="display: none">
+                                        <select class="form-control form-control-default" data-val="false" data-val-required="Plan is required." id="Plan" name="Plan"><option value="">Select Plan</option><option value="default">default</option></select>
+                                        <span class="field-validation-valid" data-valmsg-for="Plan" data-valmsg-replace="true"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="ProductID">Local Currency</label>
+                                        <select class="form-control form-control-default" data-val="true" data-val-required="Amount is required." id="ProductID" name="ProductID"><option value="">Select Amount</option><option value="29871~SV~Claro~1~0~">$1.00 Test</option><option value="56399~SV~Claro~5~0~">$5.00 tetstrttt.</option></select>
+                                        <span class="field-validation-valid" data-valmsg-for="ProductID" data-valmsg-replace="true"></span>
+                                    </div>
+
+                                </div>
+                                    <div class="form-group col-md-6" id="divDestinationCurrency">
+                                        <div class="dest-currency">
+                                            <label>Destination Currency</label>
+                                            <div class="form-control">
+                                                <strong id="DestinationCurrency">0.00 USD</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div style="display: none" class="panel panel-default imtu--special-offer">
+                                <div class="panel-heading special-offer--title">Special Discount Offer<sup>*</sup></div>
+                                <div class="panel-body">
+                                    <p style="display: none;">
+                                        <span class="special-offer--msg">You pay only:&nbsp;</span>
+                                        <strong id="discountOfferAmount"></strong>
+                                        <a id="terms-popup-link" style="visibility: hidden" href="javascript:void(0);" data-description="">Terms and Conditions</a>
+                                    </p>
+                                    <small id="completeOfferDetails" style="display: none" data-content="Discount offer valid through September 30, 2015, for all completed international mobile recharges (IMTU) made through Boss Revolution either online at www.bossrevolution.com or via the Boss Revolution Mobile App.
+                        <br/><br/>
+                        Discount applies to purchase price of IMTU, not balance provided to recipient. Receive 5% off purchase price for recharges $15 or less; receive 10% off purchase price for recharges over $15. All products and services for IMTU processed through Boss Revolution are subject to terms and conditions and will only recharge the airtime of a prepaid cellular phone of certain cellular mobile operators in certain countries. Rates, fees and terms for cellular service are established and provided by mobile operators in each country. IDT is not responsible for any error due to incorrect information supplied by sender to process the transaction.
+                        <br/><br/>
+                        All IMTU purchases processed through Boss Revolution are final and may not be exchanged, canceled or refunded. Boss Revolution service provided by IDT Domestic Telecom and subject to terms and conditions. For complete terms or more information call customer service at 1-800-676-8312 or visit www.bossrevolution.com/terms. Promotion subject to change with or without notice." data-title="<strong>Offer Terms</strong>">
+                                        *For complete offer details, see&nbsp;<a href="javascript:void(0);">here</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="page-section">
+                            <h2>Select a Payment Type</h2>
+                            <div class="payment-type">
+                                <div id="PaymentType" class="payment-type">
+
+                                    <input id="ModelType" name="ModelType" type="hidden" value="BrCustomerSite.VM.MtuExt">
+                                    <div id="init_cc_payment" style="position: relative; zoom: 1;">
+                                        <div id="init_cc_payment">
+                                            <div class="payment-type--card card-padding">
+                                                <input id="Type" name="PaymentModel.Type" type="hidden" value="CC">
+                                                <input id="SelectedHandleID" name="PaymentModel.SelectedHandleID" type="hidden" value="">
+                                                <input id="SelectedCardNumber" name="PaymentModel.SelectedCardNumber" type="hidden" value="">
+                                                <input id="SelectedChargeType" name="PaymentModel.SelectedChargeType" type="hidden" value="">
+                                                <input id="SelectedCardType" name="PaymentModel.SelectedCardType" type="hidden" value="">
+                                                <input id="Cvv2" name="PaymentModel.Cvv2" type="hidden" value="">
+                                                <input id="DisplaySelectedCardNumber" name="DisplaySelectedCardNumber" type="hidden" value="">
+
+                                                <div class="payment-type--card-list">
+                                                    <h4>Credit/Debit Card Information</h4>
+                                                    <ul class="paymentcard-radiolist">
+                                                        <li class="paymentcard-radiolist-item">
+                                                            <div class="radio well">
+                                                                <input type="radio" name="HandleID" id="2100000954" class="handle" value="false" data-attr-pay-type="Mastercard" data-attr-type="CC" data-attr-num="xxxxxxxxxxxx5454">
+                                                                <label for="2100000954" class="paymentcard-radiolist-label">
+                                                                    <span class="paymentcard-main">
+                                                                        <span class="row">
+                                                                            <span class="col-xs-4 col-sm-3 col-md-2 quarter-gutter-right paymentcard-icon">
+                                                                                <img alt="Mastercard" class="img-responsive" src="<%- @getUrl('/img/payment-card/Mastercard.png') %>">
+                                                                            </span>
+                                                                            <span class="col-xs-8 col-sm-9 col-md-10 quarter-gutter-left paymentcard-number">
+                                                                                <strong>xxxxxxxxxxxx5454</strong><br>
+                                                                                <small>Expiration: 10/2019</small>
+                                                                            </span>
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="add-new-card well">
+                                                    <input type="hidden" name="display_payment" id="display_payment" value="0">
+                                                    <div id="add_cc_option" style="display:block">
+                                                        <div class="radio">
+                                                            <input class="handle add_cc" id="Handle_0" name="New Card" type="radio" value="True">
+                                                            <label id="addccmsg" for="Handle_0"><strong>Add a Credit/Debit Card</strong></label>
+                                                        </div>
+                                                    </div>
+                                                    <div id="New_Payment" style="">
+                                                        <%- @partial('Payment/_NewCCPayment') %>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-section">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
+                                    <input type="submit" name="BtnOrder" id="BtnOrder" value="Send Top Up" class="btn btn-success btn-lg btn-block">
+                                </div>
                             </div>
                         </div>
                     </div>

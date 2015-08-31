@@ -14,18 +14,22 @@ loggedin: true
         </section>
         <section class="page-section">
             <article class="tab-links form-group">
-                <ul class="nav nav-pane nav-pills nav-justified" role="tablist">
-                    <li class="active"><a href="#account-passw" role="tab" data-toggle="tab">Account Password</a></li>
-                    <li><a href="#account-qa" role="tab" data-toggle="tab">Question / Answer</a></li>
-                </ul>
+                <div class="row">
+                    <div class=" col-sm-8 col-sm-push-2 col-md-6 col-md-push-3">
+                        <ul class="nav nav-pane nav-pills nav-justified" role="tablist">
+                            <li class="active"><a href="#account-passw" role="tab" data-toggle="tab">Account Password</a></li>
+                            <li><a href="#account-qa" role="tab" data-toggle="tab">Question / Answer</a></li>
+                        </ul>
+                    </div>
+                </div>
             </article>
 
             <!-- Tab panes -->
-            <div class="tab-content">
+            <div class="tab-content page-section">
                 <article class="tab-pane fade in active" id="account-passw">
-                    <header class="island-header text-center">
-                        <h2>Account Password</h2>
-                    </header>
+
+                    <h2 class="text-center">Account Password</h2>
+
                     <form action="/my-account/update-password" method="post" novalidate="novalidate">
                         <input name="__RequestVerificationToken" type="hidden" value="o0gmdEae5FLWLdExVKbeM6kXD0dEsFJsVSSkYM7NZE0B9t2uI3E7-yPyGkJdwdgZj6hIGHHCI5f9Jf-vsqTMIjQOG6UBsEtlAgBJiN7oaY4r7o1o9jV_zXPxI5XIGgJ90">
                         <div class="row">
@@ -58,9 +62,9 @@ loggedin: true
                     </form>
                 </article>
                 <article class="tab-pane fade" id="account-qa">
-                    <header class="island-header text-center">
-                        <h2>Question / Answer</h2>
-                    </header>
+
+                    <h2 class="text-center">Question / Answer</h2>
+
                     <form action="/my-account/update-qa" method="post" novalidate="novalidate">
                         <input name="__RequestVerificationToken" type="hidden" value="pooRlRG17X22LI79q_oadNCaYdfbTgQmNuX6PphsyEK7DcjRuAtI2kqEuy_-NgNDxtcEPUypWvZpusTgT_KUoZgR3rtp_z8CwcLLAx5nIJfiZ00IBft9XMT2_vTyCljs0">
                         <div class="row required has-feedback">
