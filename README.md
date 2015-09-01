@@ -21,6 +21,10 @@ Then do the next:
     ```
     docpad run
     ```
+    
+    ```
+    grunt watchless
+    ```
 
 4. Open in browser [http://localhost:9778](http://localhost:9778)
 
