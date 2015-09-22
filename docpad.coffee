@@ -34,7 +34,7 @@ docpadConfig = {
 
 			email: ""
 
-			companyname: "[Company Name]"
+			companyname: "Natcom"
 
 			googleAnalyticsId: ""
 

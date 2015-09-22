@@ -38,9 +38,9 @@ Also, be sure you are topping up a prepaid mobile phone. Mobile top up cannot be
 
 ### What should I do if the recipient did not receive the top up that I sent?
 
-Please contact [customer service](<%- @getUrl('/templates/support/') %>) and provide the details of your order: the transaction ID number and the recipient's mobile phone number, mobile service provider and country. Our Customer Service team will contact the mobile service provider about your top up.
+Please contact [customer service](<%- @getUrl('/support') %>) and provide the details of your order: the transaction ID number and the recipient's mobile phone number, mobile service provider and country. Our Customer Service team will contact the mobile service provider about your top up.
 
-Occasionally a mobile service provider may experience a system delay that prevents a top up from being processed immediately. If you have received a "Pending" notification in your account's [transaction history](<%- @getUrl('/templates/transactions?option=TM&product_filter=I') %>), please wait until you receive final confirmation of the status of your top up order before contacting us.
+Occasionally a mobile service provider may experience a system delay that prevents a top up from being processed immediately. If you have received a "Pending" notification in your account's [transaction history](<%- @getUrl('/transactions?option=TM&product_filter=I') %>), please wait until you receive final confirmation of the status of your top up order before contacting us.
 
 ## My Account
 
@@ -54,7 +54,7 @@ You will then have a set of credentials that will allow you to login to the acco
 
 Follow these steps to login:
 
-1. Go to the [Login](<%- @getUrl('/templates/login/') %>) page.
+1. Go to the [Login](<%- @getUrl('/login?ReturnUrl=%2Fmy-account') %>) page.
 2. Enter the email address you provided when you created your <%- @site.companyname %> account.
 3. Enter your password below your email address.
 4. Press the Login button to enter the account center.
@@ -63,7 +63,7 @@ Follow these steps to login:
 
 If you forgot your password, you can reset it by following these steps:
 
-1. Go to the [Login](<%- @getUrl('/templates/login/') %>) page and press the [Forgot Password](<%- @getUrl('/login/forgot/') %>) link.
+1. Go to the [Login](<%- @getUrl('/login?ReturnUrl=%2Fmy-account') %>) page and press the [Forgot Password](<%- @getUrl('/login/forgot') %>) link.
 2. Enter the email address you provided when you created your <%- @site.companyname %> account and summ of two numbers from security image.
 3. Then answer your security question.
 4. You will receive an email from <%- @site.companyname %> that contains instructions for resetting your password.
@@ -82,12 +82,12 @@ The account center puts all of the details in one place. You can:
 
 Use these links to access specific pages within the account center:
 
-- [Update your password or security question](<%- @getUrl('/templates/my-account/update-profile/') %>)
-- [Update your credit card or bank account information](<%- @getUrl('/templates/my-account/update-profile/') %>)
+- [Update your password or security question](<%- @getUrl('/my-account/update-profile') %>)
+- [Update your credit card or bank account information](<%- @getUrl('/my-account/payment-options') %>)
 
 ### How do I view my transaction history?
 
-[Login](<%- @getUrl('/templates/login/') %>) to your account and go to the [Transaction History](<%- @getUrl('/templates/transactions?option=TM&product_filter=I') %>) page. You can view transactions for all top ups in your <%- @site.companyname %> account.
+[Login](<%- @getUrl('/login?ReturnUrl=%2Fmy-account') %>) to your account and go to the [Transaction History](<%- @getUrl('/transactions?option=TM&product_filter=I') %>) page. You can view transactions for all top ups in your <%- @site.companyname %> account.
 
 ## Payment Options
 
@@ -108,7 +108,7 @@ Yes, we do. Please be sure that you have first registered the card with the issu
 
 If you need to update your expiration date or other card information, follow these steps:
 
-1. [Login](<%- @getUrl('/templates/login/') %>) to your <%- @site.companyname %> account.
+1. [Login](<%- @getUrl('/login?ReturnUrl=%2Fmy-account') %>) to your <%- @site.companyname %> account.
 2. Select Payment Options from the My Account link in the main navigation.
 3. Select the Credit/Debit Card tab and update your card information.
 

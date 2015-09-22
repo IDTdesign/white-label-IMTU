@@ -8,148 +8,53 @@
 	"buffers":
 	[
 		{
+			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n  ",
+			"settings":
+			{
+				"buffer_size": 1004,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		},
+		{
+			"file": "docpad.coffee",
+			"settings":
+			{
+				"buffer_size": 7487,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "src/files/css/settings/_var.less",
 			"settings":
 			{
-				"buffer_size": 28044,
+				"buffer_size": 28035,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/GitHub/boss-xgen/Sandbox/CMS Runtime PoC v3/CMSRuntimePoC v3/Html/HOME_FAQ_MyAccount_es-XF_any.html",
+			"settings":
+			{
+				"buffer_size": 2506,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/documents/templates.html.eco",
+			"file": "src/documents/templates/faq.html.md.eco",
 			"settings":
 			{
-				"buffer_size": 2192,
+				"buffer_size": 6472,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/files/css/template.css.less",
+			"file": "/C/GitHub/boss-xgen/Sandbox/CMS Runtime PoC v3/CMSRuntimePoC v3/Html/HOME_FAQ_MyAccount_en-XF_any.html",
 			"settings":
 			{
-				"buffer_size": 4715,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/files/css/base/_validation.less",
-			"settings":
-			{
-				"buffer_size": 1466,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "bower_components/bootstrap/less/tooltip.less",
-			"settings":
-			{
-				"buffer_size": 2985,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/GitHub/idtfrontend/src/files/styles/bootstrap-theme.css.less",
-			"settings":
-			{
-				"buffer_size": 9827,
+				"buffer_size": 2566,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/partials/pageheader-logged-in.html.eco",
-			"settings":
-			{
-				"buffer_size": 2269,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/documents/templates/login.html.eco",
-			"settings":
-			{
-				"buffer_size": 2373,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/documents/templates/register.html.eco",
-			"settings":
-			{
-				"buffer_size": 6480,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/layouts/default-md.html.eco",
-			"settings":
-			{
-				"buffer_size": 3044,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/documents/index.html.md.eco",
-			"settings":
-			{
-				"buffer_size": 1550,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 327,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/documents/templates/my-account.html.eco",
-			"settings":
-			{
-				"buffer_size": 2217,
-				"line_ending": "Unix",
-				"name": "---"
-			}
-		},
-		{
-			"file": "src/documents/templates/my-account/payment-options.html.eco",
-			"settings":
-			{
-				"buffer_size": 13417,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/documents/templates/my-account/transactions.html.eco",
-			"settings":
-			{
-				"buffer_size": 2420,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/documents/templates/my-account/update-profile.html.eco",
-			"settings":
-			{
-				"buffer_size": 15195,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/partials/mtu/_RecieverNumber.html.eco",
-			"settings":
-			{
-				"buffer_size": 1839,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/layouts/default.html.eco",
-			"settings":
-			{
-				"buffer_size": 2143,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -211,20 +116,51 @@
 		"/C/GitHub/white-label-IMTU/src",
 		"/C/GitHub/white-label-IMTU/src/documents",
 		"/C/GitHub/white-label-IMTU/src/documents/templates",
-		"/C/GitHub/white-label-IMTU/src/documents/templates/login",
-		"/C/GitHub/white-label-IMTU/src/documents/templates/login/forgot",
 		"/C/GitHub/white-label-IMTU/src/files",
 		"/C/GitHub/white-label-IMTU/src/files/css",
-		"/C/GitHub/white-label-IMTU/src/files/css/base",
+		"/C/GitHub/white-label-IMTU/src/files/css/generic",
+		"/C/GitHub/white-label-IMTU/src/files/css/objects",
 		"/C/GitHub/white-label-IMTU/src/files/css/settings",
 		"/C/GitHub/white-label-IMTU/src/layouts",
 		"/C/GitHub/white-label-IMTU/src/partials",
-		"/C/GitHub/white-label-IMTU/src/partials/mtu"
+		"/C/GitHub/white-label-IMTU/src/partials/Account",
+		"/C/GitHub/white-label-IMTU/src/partials/Payment"
 	],
 	"file_history":
 	[
-		"/C/GitHub/white-label-IMTU/src/documents/templates/login.html.eco",
+		"/C/GitHub/boss-xgen/Sandbox/CMS Runtime PoC v3/CMSRuntimePoC v3/Html/HOME_FAQ_MobileTopUp_es-XF_any.html",
+		"/C/GitHub/boss-xgen/Sandbox/CMS Runtime PoC v3/CMSRuntimePoC v3/Html/HOME_FAQ_MobileTopUp_en-XF_any.html",
+		"/C/GitHub/white-label-IMTU/src/documents/index.html.md.eco",
+		"/C/GitHub/white-label-IMTU/src/layouts/default.html.eco",
+		"/C/GitHub/white-label-IMTU/src/documents/templates/international-mobile-topup/purchase.html.eco",
+		"/C/GitHub/white-label-IMTU/src/layouts/docs.html.eco",
+		"/C/GitHub/white-label-IMTU/src/documents/templates/my-account/security.html.eco",
+		"/C/GitHub/white-label-IMTU/src/documents/templates/my-account/update-email.html.eco",
+		"/C/GitHub/white-label-IMTU/src/files/css/settings/_var.less",
+		"/C/GitHub/white-label-IMTU/src/documents/templates/my-account.html.eco",
+		"/C/GitHub/white-label-IMTU/src/documents/templates/my-account/transactions.html.eco",
+		"/C/GitHub/white-label-IMTU/src/documents/templates/my-account/update-profile.html.eco",
+		"/C/GitHub/white-label-IMTU/src/partials/Account/_Breadcrumb.html.eco",
+		"/C/GitHub/white-label-IMTU/src/files/css/base/_validation.less",
+		"/C/GitHub/BRGPR/docpad.coffee",
+		"/C/GitHub/BRGPR/.gitignore",
+		"/C/GitHub/white-label-IMTU/src/documents/templates/international-mobile-topup/auth-purchase.html.eco",
+		"/C/GitHub/white-label-IMTU/src/files/css/components/_breadcrumbs.less",
+		"/C/GitHub/white-label-IMTU/src/files/css/components/_wells.less",
+		"/C/GitHub/white-label-IMTU/src/documents/templates.html.eco",
+		"/C/GitHub/white-label-IMTU/src/files/css/template.css.less",
+		"/C/GitHub/white-label-IMTU/bower_components/bootstrap/less/tooltip.less",
+		"/C/GitHub/white-label-IMTU/src/partials/pageheader.html.eco",
+		"/C/GitHub/idtfrontend/src/files/styles/bootstrap-theme.css.less",
+		"/C/GitHub/white-label-IMTU/src/documents/templates/my-account/payment-options.html.eco",
+		"/C/GitHub/white-label-IMTU/src/partials/Payment/_NewCCPayment.html",
+		"/C/GitHub/white-label-IMTU/src/partials/mtu/_RecieverNumber.html.eco",
+		"/C/GitHub/white-label-IMTU/src/partials/Account/_UpdateMenu.html.eco",
+		"/C/GitHub/white-label-IMTU/.gitignore",
+		"/C/GitHub/white-label-IMTU/src/layouts/default-md.html.eco",
 		"/C/GitHub/white-label-IMTU/src/documents/templates/register.html.eco",
+		"/C/GitHub/white-label-IMTU/src/documents/templates/login.html.eco",
+		"/C/GitHub/white-label-IMTU/src/partials/pageheader-logged-in.html.eco",
 		"/C/GitHub/white-label-IMTU/src/documents/templates/login/forgot/verify-qa.html.eco",
 		"/C/GitHub/white-label-IMTU/src/documents/templates/login/forgot/forgot-message.html.eco",
 		"/C/GitHub/white-label-IMTU/src/documents/templates/faq.html.md.eco",
@@ -275,7 +211,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -289,6 +225,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"component-active-bg",
+			"navs",
+			",\n",
 			"%>)\n",
 			"%>\n",
 			"tool",
@@ -315,90 +254,86 @@
 	"groups":
 	[
 		{
-			"selected": 11,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/files/css/settings/_var.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 28044,
+						"buffer_size": 1004,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18435,
-								18435
+								1004,
+								1004
 							]
 						],
 						"settings":
 						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3220.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/documents/templates.html.eco",
+					"file": "docpad.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2192,
+						"buffer_size": 7487,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								560,
-								598
+								904,
+								904
 							]
 						],
 						"settings":
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage",
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
+							"translate_tabs_to_spaces": false,
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "src/files/css/template.css.less",
-					"semi_transient": false,
+					"file": "src/files/css/settings/_var.less",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 4715,
+						"buffer_size": 28035,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1338,
-								1338
+								0,
+								0
 							]
 						],
 						"settings":
@@ -406,303 +341,6 @@
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 135.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/files/css/base/_validation.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								464,
-								464
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "bower_components/bootstrap/less/tooltip.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2985,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								71,
-								2985
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 769.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/GitHub/idtfrontend/src/files/styles/bootstrap-theme.css.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9827,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8764,
-								8764
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4715.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/partials/pageheader-logged-in.html.eco",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2269,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2269,
-								2269
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/documents/templates/login.html.eco",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2373,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								801,
-								841
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "src/documents/templates/register.html.eco",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6480,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1224,
-								1224
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "src/layouts/default-md.html.eco",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3044,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2456,
-								2491
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "src/documents/index.html.md.eco",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1550,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1550,
-								1550
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 327,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								288,
-								288
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -717,91 +355,53 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 12,
-					"file": "src/documents/templates/my-account.html.eco",
+					"buffer": 3,
+					"file": "/C/GitHub/boss-xgen/Sandbox/CMS Runtime PoC v3/CMSRuntimePoC v3/Html/HOME_FAQ_MyAccount_es-XF_any.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2217,
+						"buffer_size": 2506,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2208,
-								2208
+								806,
+								806
 							]
 						],
 						"settings":
 						{
-							"auto_name": "---",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "src/documents/templates/my-account/payment-options.html.eco",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13417,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13417,
-								13417
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3690.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "src/documents/templates/my-account/transactions.html.eco",
+					"buffer": 4,
+					"file": "src/documents/templates/faq.html.md.eco",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2420,
+						"buffer_size": 6472,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2420,
-								2420
+								4006,
+								4006
 							]
 						],
 						"settings":
@@ -814,109 +414,39 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 810.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
-					"file": "src/documents/templates/my-account/update-profile.html.eco",
+					"buffer": 5,
+					"file": "/C/GitHub/boss-xgen/Sandbox/CMS Runtime PoC v3/CMSRuntimePoC v3/Html/HOME_FAQ_MyAccount_en-XF_any.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15195,
+						"buffer_size": 2566,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								303,
-								303
+								2566,
+								2566
 							]
 						],
 						"settings":
 						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "src/partials/mtu/_RecieverNumber.html.eco",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1839,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1839,
-								1839
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "src/layouts/default.html.eco",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2143,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2143,
-								2143
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/eco/Syntaxes/HTML (ECO).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -950,7 +480,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.46925704526,
 			1.0
 		],
 		"rows":
@@ -1006,7 +536,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 273.0,
+	"side_bar_width": 218.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
