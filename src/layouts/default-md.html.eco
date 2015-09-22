@@ -25,7 +25,7 @@
     <%- @partial('svg-defs') %>
     <div class="allpage">
         <header class="allpage--header">
-        <% if (@document.loggedin) : %>
+        <% if (@document.loggedin == true) : %>
             <%- @partial('pageheader-logged-in') %>
         <% else : %>
             <%- @partial('pageheader') %>
