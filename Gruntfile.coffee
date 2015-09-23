@@ -67,6 +67,12 @@ module.exports = (grunt) ->
 					'out/vendor/jquery.sticky.js':'bower_components/sticky/jquery.sticky.js'
 					'out/vendor/jquery.scrollTo/jquery.scrollTo.min.js':'bower_components/jquery.scrollTo/jquery.scrollTo.min.js'
 					'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js'
+					# fonts
+					'out/fonts/glyphicons-halflings-regular.eot':'bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot'
+					'out/fonts/glyphicons-halflings-regular.svg':'bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg'
+					'out/fonts/glyphicons-halflings-regular.ttf':'bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf'
+					'out/fonts/glyphicons-halflings-regular.woff':'bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff'
+					'out/fonts/glyphicons-halflings-regular.woff2':'bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2'
 				]
 			repo:
 				files: [

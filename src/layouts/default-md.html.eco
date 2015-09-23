@@ -44,7 +44,7 @@
                         <article class="col-md-8">
                             <%- @content %>
                         </article>
-                        <aside class="col-md-4">
+                        <aside class="col-md-4 hidden-sm hidden-xs">
                             <div class="local-nav">
                                 <%- @partial(@document.sidebar) %>
                             </div>

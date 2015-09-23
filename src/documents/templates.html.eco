@@ -44,15 +44,15 @@ title: 'Homepage'
         <h2>Benefits</h2>
         <div class="row">
             <div class="col-sm-4">
-                <h3>Easy</h3>
+                <h3><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Easy</h3>
                 <p>Give the gift of talk — just select a top up amount and the airtime minutes will be on their way.</p>
             </div>
             <div class="col-sm-4">
-                <h3>Worldwide</h3>
+                <h3><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Worldwide</h3>
                 <p>Recharge mobile phones in over 200 destinations from our website or our award-winning mobile app.</p>
             </div>
             <div class="col-sm-4">
-                <h3>Safe &amp; Instant</h3>
+                <h3><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Safe &amp; Instant</h3>
                 <p>Be confident that the phone abroad will be recharged safely and instantly with the amount that you requested.</p>
             </div>
         </div>
