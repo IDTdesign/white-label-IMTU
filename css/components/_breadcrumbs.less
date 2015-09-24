@@ -1,0 +1,72 @@
+/*
+
+# Extends and overrides bootstrap breadcrumbs
+
+Usage:
+
+```html
+
+<ol class="breadcrumb">
+    <li>
+        <a href="#">
+            <span class="breadcrumb-icon" aria-hidden="true">←</span>
+            <span class="breadcrumb-item-text">My account</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="breadcrumb-item-text">Update Profile</span>
+        </a>
+    </li>
+    <li class="active">
+        Email
+    </li>
+</ol>
+
+```
+
+*/
+
+.breadcrumb {
+    padding: @breadcrumb-padding-vertical 0;
+    margin-bottom: @line-height-computed;
+    background-color: transparent;
+
+    > li {
+        display: inline-block;
+
+        + li:before {
+            content: "@{breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+            padding: 0 5px;
+            color: @breadcrumb-color;
+        }
+    }
+
+    > .active {
+        color: @breadcrumb-active-color;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+
+        .breadcrumb-item-text {
+            text-decoration: underline;
+        }
+    }
+
+    & + h1,
+    & + .h1,
+    & + h2,
+    & + .h2,
+    & + h3,
+    & + .h3 {
+        margin-top: @line-height-computed;
+    }
+}
+
+.breadcrumb-icon {
+    color: @breadcrumb-color;
+    text-decoration: none;
+}

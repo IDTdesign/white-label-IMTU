@@ -1,0 +1,30 @@
+/*
+
+# Extends bootstrap wells
+
+
+
+*/
+
+@media (max-width: @screen-xs-max) {
+    .well-fullwidth-xs {
+        border-radius: 0;
+        margin-left:  (-@grid-gutter-width/2px);
+        margin-right: (-@grid-gutter-width/2px);
+    }
+}
+
+
+.well-wide {
+    padding: 24px;
+
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        padding: 24px 48px;
+    }
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+        padding: 24px 72px;
+    }
+    @media (min-width: @screen-lg-min) {
+        padding: 24px 96px;
+    }
+}

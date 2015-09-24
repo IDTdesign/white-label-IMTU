@@ -1,0 +1,107 @@
+// comment/uncomment files to exclude/inclube in the build
+
+
+// Settings (global variables, configs)
+//-------------------------------------
+
+    @import (less) "settings/_var.less";
+
+
+// Tools (mixins and functions)
+//-----------------------------
+
+    @import (less) "../../../bower_components/bootstrap/less/mixins.less";
+
+
+// Generic (ground zero styles)
+//-----------------------------
+
+    // Reset and dependencies
+    @import (less) "../../../bower_components/bootstrap/less/normalize.less";
+    @import (less) "../../../bower_components/bootstrap/less/print.less";
+    @import (less) "../../../bower_components/bootstrap/less/glyphicons.less";
+    @import (less) "generic/_flags.less";
+    @import (less) "generic/_icons.less";
+
+
+// Base
+//-----
+
+    // Core CSS
+    @import (less) "../../../bower_components/bootstrap/less/scaffolding.less";
+    //@import (less) "../../../bower_components/bootstrap/less/type.less";
+    @import (less) "base/_typography.less"; // we use own typography instead bootstrap
+    @import (less) "../../../bower_components/bootstrap/less/code.less";
+    @import (less) "../../../bower_components/bootstrap/less/tables.less";
+    @import (less) "../../../bower_components/bootstrap/less/forms.less";
+    @import (less) "../../../bower_components/bootstrap/less/buttons.less";
+    @import (less) "base/_validation.less";
+
+
+// Objects (cosmetic-free design patterns)
+//----------------------------------------
+
+    @import (less) "objects/_checkbox.less";
+    @import (less) "objects/_radio.less";
+    @import (less) "objects/_allpage.less";
+    @import (less) "../../../bower_components/bootstrap/less/grid.less";
+    @import (less) "objects/_grid-extensions.less";
+    @import (less) "objects/_faux-table.less";
+    @import (less) "objects/_affix.less";
+
+    @import (less) "../../../bower_components/bootstrap/less/component-animations.less";
+    @import (less) "../../../bower_components/bootstrap/less/dropdowns.less";
+    @import (less) "../../../bower_components/bootstrap/less/button-groups.less";
+    @import (less) "../../../bower_components/bootstrap/less/input-groups.less";
+    @import (less) "../../../bower_components/bootstrap/less/navs.less";
+    @import (less) "../../../bower_components/bootstrap/less/navbar.less";
+    @import (less) "../../../bower_components/bootstrap/less/breadcrumbs.less";
+    @import (less) "../../../bower_components/bootstrap/less/pagination.less";
+    //@import (less) "../../../bower_components/bootstrap/less/pager.less";
+    @import (less) "../../../bower_components/bootstrap/less/labels.less";
+    @import (less) "../../../bower_components/bootstrap/less/badges.less";
+    @import (less) "../../../bower_components/bootstrap/less/jumbotron.less";
+    //@import (less) "../../../bower_components/bootstrap/less/thumbnails.less";
+    @import (less) "../../../bower_components/bootstrap/less/alerts.less";
+    //@import (less) "../../../bower_components/bootstrap/less/progress-bars.less";
+    @import (less) "../../../bower_components/bootstrap/less/media.less";
+    @import (less) "../../../bower_components/bootstrap/less/list-group.less";
+    @import (less) "../../../bower_components/bootstrap/less/panels.less";
+    @import (less) "../../../bower_components/bootstrap/less/responsive-embed.less";
+    @import (less) "../../../bower_components/bootstrap/less/wells.less";
+    @import (less) "../../../bower_components/bootstrap/less/close.less";
+
+    // with JavaScript
+    @import (less) "../../../bower_components/bootstrap/less/modals.less";
+    @import (less) "../../../bower_components/bootstrap/less/tooltip.less";
+    @import (less) "../../../bower_components/bootstrap/less/popovers.less";
+    @import (less) "../../../bower_components/bootstrap/less/carousel.less";
+
+// Components (designed components, UI elements)
+//----------------------------------------------
+
+    @import (less) "components/_page-section.less";
+    @import (less) "components/_loginform.less";
+    @import (less) "components/_input-prefix.less";
+    @import (less) "components/_flash.less";
+    @import (less) "components/_paymentcard.less";
+    @import (less) "components/_nav-aside.less";
+    @import (less) "components/_breadcrumbs.less";
+    @import (less) "components/_wells.less";
+    //@import (less) "components/_input-group-transparent.less";
+
+    // bootstrap Validator files
+    //@import (less) "../../../bower_components/bootstrapValidator/dist/css/bootstrapValidator.css";
+
+// Themes (if any)
+//----------------
+    @import (less) "themes/_navbar-pageheader.less";
+    @import (less) "themes/_jumbotron-theme.less";
+
+// Trumps (helpers and overrides)
+//------------------------------
+
+    // Utility classes
+    @import (less) "../../../bower_components/bootstrap/less/utilities.less";
+    @import (less) "../../../bower_components/bootstrap/less/responsive-utilities.less";
+

@@ -1,0 +1,31 @@
+/*
+
+# Theme for Bootstrap vertical nav
+
+*/
+
+.nav-aside {
+    > li > a {
+        border-left: 2px solid transparent;
+
+        &:hover,
+        &:focus {
+            border-left-color: @brand-primary;
+            background-color: transparent;
+            color: @gray;
+        }
+    }
+    > .active > a {
+        border-left-color: @brand-primary;
+        background-color: transparent;
+        color: @gray;
+    }
+}
+
+.nav-aside.nav-aside-sub {
+    > li > a {
+        font-size: @font-size-small;
+        border-left-width: 1px;
+        padding: @nav-link-padding-sub;
+    }
+}

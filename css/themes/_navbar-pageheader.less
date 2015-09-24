@@ -1,0 +1,32 @@
+.navbar-pageheader {
+    margin-bottom: 0;
+    border-radius: 0;
+    border-width: 0;
+
+    .navbar-brand-img {
+        display: inline-block;
+        padding-right: @padding-base-horizontal;
+    }
+
+    @media (max-width: @screen-sm-max) {
+        .navbar-body {
+            clear: both;
+        }
+    }
+
+    /* 1 - depends on logo image height */
+
+    @media (min-width: @screen-md-min) {
+
+        .nav > li > a {
+            padding-top: 31px; /* 1 */
+            padding-bottom: 20px; /* 1 */
+        }
+    }
+
+    .navbar-toggle {
+        margin-top: 15px; /* 1 */
+        margin-bottom: 15px; /* 1 */
+        color: #FFF;
+    }
+}

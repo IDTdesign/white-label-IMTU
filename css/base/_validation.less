@@ -1,0 +1,56 @@
+/*
+
+# Validation styles for forms
+
+*/
+
+//** Tooltip text color
+@tooltip-color:               #fff;
+//** Validation background color
+@field-validation-error-bg:                  #800000;
+
+//** Tooltip arrow width
+@tooltip-arrow-width:         5px;
+//** Validation arrow color
+@field-validation-error-arrow-color:         @field-validation-error-bg;
+
+
+.input-validation-error {
+    border-color: @field-validation-error-bg;
+}
+
+// Base class
+.field-validation-error {
+    position: relative;
+    z-index: @zindex-tooltip;
+    display: inline-block;
+    // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
+    // So reset our font and text properties to avoid inheriting weird values.
+    .reset-text();
+    font-size: @font-size-small;
+    margin-top: (@tooltip-arrow-width + 3px);
+    padding: @tooltip-arrow-width 0;
+    padding: 3px 8px;
+    color: @tooltip-color;
+    text-align: center;
+    background-color: @field-validation-error-bg;
+    border-radius: @border-radius-base;
+
+    // Arrows
+    &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        top: -@tooltip-arrow-width;
+        left: 50%;
+        margin-left: -@tooltip-arrow-width;
+        border-width: 0 @tooltip-arrow-width @tooltip-arrow-width;
+        border-bottom-color: @field-validation-error-arrow-color;
+    }
+}
+
+
+
